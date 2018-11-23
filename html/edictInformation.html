@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>修改电站</title>
+    <meta name="renderer" content="webkit" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="../css/font-awesome.css" rel="stylesheet" />
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../css/addStation.css" rel="stylesheet" />
+    <link rel="stylesheet" href="http://cache.amap.com/lbs/static/main1119.css"/>
+    <link href="../css/cityLayout.css" type="text/css" rel="stylesheet">
+    <script src="../js/cityselect.js"></script>
+    <script src="http://cache.amap.com/lbs/static/es5.min.js"></script>
+    <script src="http://webapi.amap.com/maps?v=1.4.5&key=您申请的key值"></script>
+    <script type="text/javascript" src="http://cache.amap.com/lbs/static/addToolbar.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/echarts.js"></script>
+    <script src="../js/edictInformation.js"></script>
+    <script src="../js/checkForm.js"></script>
+</head>
+
+<script>
+    $(function(){
+        init_city_select($("#sel1, #sel2"));
+    });
+
+</script>
+<body>
+<div class="top">
+    <div class="top-left">
+        <div class="kong"></div>
+        <div class="logo">
+            <img src="../imgs/logo3.png">
+        </div>
+    </div>
+    <div class="top-right">
+        <ul class="list">
+            <li><a href="informationCenter.html">电站中心</a></li>
+            <li><a href="checkCenter.html">运维中心</a></li>
+            <li><a href="reportCenter.html">报表中心</a></li>
+            <li><a href="centralizedControl.html">展示中心</a></li>
+            <li><a href="associate.html">账号管理</a></li>
+            <li><a href="login.html" ><span class="fa fa-user" title="退出"></span></a></li>
+        </ul>
+    </div>
+</div>
+<div class="main">
+    <div class="center">
+        <form class="form" action="" method="post" name="form1" id="myform">
+            <div class="left">
+                <div class="leftTop">
+                    <div class="confirm">
+                        <input type="button" onclick="beforeSubmit()" value="确认电站信息">
+                    </div>
+                    <div class="kong2"></div>
+                </div>
+                <div class="leftContent">
+                    <div class="box1">
+                        <div class="side">
+                            <span>
+                                电站名称
+                            </span>
+                        </div>
+                        <div class="select">
+                            <input type="text" placeholder="输入您要添加的电站名称" id="name" name="name">
+                        </div>
+                    </div>
+                    <div class="box2">
+                        <div class="side">
+                             <span>
+                                电站类型
+                            </span>
+                        </div>
+                        <div class="select">
+                            <div><input type="radio" name="gender" id="a" value="X"><label for="a">家用屋顶</label></div>
+                            <div><input type="radio" name="gender" id="b" value="M"><label for="b">商用屋顶</label></div>
+                            <div><input type="radio" name="gender" id="c" value="F"><label for="c">工业用屋顶</label></div>
+                            <div><input type="radio" name="gender" id="d" value="F"><label for="d">地面电站</label></div>
+                        </div>
+                    </div>
+                    <div class="box4">
+                        <div class="side">
+                             <span>
+                                电站位置
+                            </span>
+                        </div>
+                        <div class="select">
+                            <div class="seleTop">
+                                <input name="sel" id="sel" type="text" class="country_input" readonly="readonly" value="中国" >
+                                <input name="sel1" id="sel1"  type="text"  class="city_input" readonly="readonly" placeholder="江苏无锡滨湖区">
+                                <input name="sel3" id="sel3" type="text" value="123">
+                                <input type="button" class="button btn" value="搜索" id="addMarker"/>
+                                <input type="button" class="button btn" value="取消" id="clearMarker"/>
+                            </div>
+                            <div class="map">
+                                <div id="container" >
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="block" id="block">
+                    <div class="box">
+                        <div class="boxTitle">
+                            <span>时区</span>
+                        </div>
+                        <div class="boxSet shiqu">
+                            <input type="text" placeholder="(UTC+08:00)  北京时间" disabled>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="boxTitle">
+                            方位角（°）
+                        </div>
+                        <div class="boxSet fangwei">
+                            <input type="range" value="180" max="360" min="0" id="fangweiNum">
+                            <div id="fangwei"></div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="boxTitle">
+                            倾角（°）
+                        </div>
+                        <div class="boxSet qingjiao">
+                            <input type="range"  value="26" max="360" min="0" id="qingjiaoNum">
+                            <div id="qingjiao"></div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="boxTitle">
+                            币种
+                        </div>
+                        <div class="boxSet bizhong">
+                            <input type="text" placeholder="CNY 人民币"disabled>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="boxTitle">
+                            平均电价（CNY/kwh）
+                        </div>
+                        <div class="boxSet dianjia">
+                            <input type="number" step="0.01" id="price" value="" name="price"  onblur="beNumber(id)" placeholder="">
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="boxTitle">
+                            建设成本（CHY）
+                        </div>
+                        <div class="boxSet chengben">
+                            <input type="number" id="cost" step="10" value="" onblur="beNumber(id)" placeholder="">
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="boxTitle">
+                            装机容量
+                        </div>
+                        <div class="boxSet chengben">
+                            <input type="number" step="10" id="content" value="" name="content" onblur="beNumber(id)">
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="boxTitle">
+                            建设补贴（CHY）
+                        </div>
+                        <div class="boxSet chengben">
+                            <input type="number"  step="100" id="subsidy" value="" onblur="beNumber(id)">
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="boxTitle">
+                            还款方式
+                        </div>
+                        <div class="boxSet huankuan">
+                            <div><input type="radio" name="huankuan" id="one" value=""><label for="one">等额本金</label></div>
+                            <div><input type="radio" name="huankuan" id="two" value=""><label for="two">等额本息</label></div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="boxTitle">
+                            联系电话
+                        </div>
+                        <div class="boxSet phoneNum">
+                            <input type="text" id="phone"  onblur="checkme()" placeholder="">
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="boxTitle">
+                            SN号<i class="fa fa-plus-square" title="增加SN号" onclick="addsn()" style="margin-left: 5px;"></i>
+                        </div>
+                        <div class="boxSet sn" id="blockadd" >
+
+                        </div>
+                    </div>
+                    <input type="text" value="1" id="hide" hidden >
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script>
+
+    var data=[123,1234,12345];
+    var html = [];
+    for (var i=0;i<data.length;i++){
+        html += '<div class="edictsn" ><input type="number"  name="sn" value="'+data[i]+'" disabled  style="margin-bottom: 10px;height: 25px;width: 80%" onblur="beNumber(id)"><i class="fa fa-plus-square" title="增加SN号" onclick="addsn()" style="margin-right: 5px;"></i><i class="fa fa-minus-square oldfa" title="删除该SN号" id="sn'+[i]+'"></i></div>';
+    }
+    $('#blockadd').html(html);
+
+//    增加sn
+    function addsn() {
+        $('#blockadd').append('<div class="addSN" style="margin-bottom: 40px;"><input type="text" placeholder="请输入新添加的SN号" name="sn" value="" style="height: 25px;width: 80%"><i class="fa fa-plus-square fa" title="增加SN号" onclick="addsn()" style="margin-right: 5px;"></i><i class="fa fa-minus-square newfa" title="删除该SN号" id="add" onclick="delenew()"></i></div>')
+    }
+
+    $('.oldfa').click(function (e){
+        var v_id=e.target.id;
+        var powerSn=$("#"+v_id).siblings(":first").val();
+        alert(powerSn)
+        $("#"+v_id).parent().remove();
+    });
+    function delenew() {
+        $('.addSN').remove()
+    }
+</script>
+
+<script>
+    var marker,map = new AMap.Map('container', {
+        center: [100.397428, 35.90923],
+        layers: [new AMap.TileLayer.Satellite()],
+        zoom: 1
+    });
+    AMap.event.addDomListener(document.getElementById('addMarker'), 'click', function() {
+        addMarker();
+    }, false);
+    function addMarker() {
+        marker = new AMap.Marker({
+            icon: "http://webapi.amap.com/theme/v1.3/markers/n/mark_b.png",
+            position: [120.405467, 39.907761]
+        });
+        marker.setMap(map);
+    }
+    AMap.event.addDomListener(document.getElementById('clearMarker'), 'click', function() {
+        if (marker) {
+            marker.setMap(null);
+            marker = null;
+        }
+    }, false);
+    map.clearMap();  // 清除地图覆盖物
+
+    data=[
+        {"place":[116.2329,39.5420],"cityname":"北京"},
+        {"place":[112.05,32.04],"cityname":"襄阳"},
+        {"place":[121.281321,31.13495],"cityname":"上海"},
+    ]
+
+    //    alert(data.length);
+    for (var i=0;i<data.length;i++){
+        var id = 'marker'+i;
+        id = new AMap.Marker({
+            icon:'../imgs/black.png',
+            position:data[i].place
+        });
+        id.setMap(map);
+        id.setTitle(data[i].cityname);
+        id.setLabel({
+            offset: new AMap.Pixel(20, 20),
+            content: data[i].cityname
+        });
+//        alert(data[i].place+ data[i].cityname)
+    }
+</script>
+<script src="../js/range.js"></script>
+</body>
+</html>

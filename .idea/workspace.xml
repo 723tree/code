@@ -1,0 +1,924 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/html/associate.html" line="86" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="cb6a832b-dad0-43d1-9cab-9d54f4fb30f2" name="Default" comment="" />
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="informationCenter.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/informationCenter.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="576">
+              <caret line="24" column="7" lean-forward="false" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="informationCenter.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/informationCenter.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1248">
+              <caret line="52" column="17" lean-forward="false" selection-start-line="52" selection-start-column="17" selection-end-line="52" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="essential information.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/essential information.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="6168">
+              <caret line="257" column="32" lean-forward="false" selection-start-line="257" selection-start-column="32" selection-end-line="257" selection-end-column="32" />
+              <folding>
+                <marker date="1538888707450" expanded="true" signature="7526:7568" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/html/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="23" column="22" lean-forward="true" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="stationRunTable.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/stationRunTable.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2256">
+              <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="addStation.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/addStation.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="432">
+              <caret line="18" column="47" lean-forward="false" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>page</find>
+      <find>power_name</find>
+      <find>defaults</find>
+      <find>settings</find>
+      <find>pageSize</find>
+      <find>current2</find>
+      <find>ui-page</find>
+      <find>current</find>
+      <find>totalPage</find>
+      <find>one</find>
+      <find>mynext</find>
+      <find>view</find>
+      <find>sel</find>
+      <find>form</find>
+      <find>nav</find>
+      <find>li</find>
+      <find>col</find>
+      <find>input</find>
+      <find>changesn</find>
+      <find>block</find>
+      <find>boxset</find>
+      <find>addSN</find>
+      <find>.right</find>
+      <find>${pageContext.request.contextPath}/static</find>
+      <find>sn</find>
+      <find>fa</find>
+      <find>3</find>
+      <find>2</find>
+      <find>4</find>
+      <find>ajax</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>fault_content</replace>
+      <replace>sendAjax2</replace>
+      <replace>power_sn</replace>
+      <replace>4</replace>
+    </replaceStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/css/checkCenter.css" />
+        <option value="$PROJECT_DIR$/css/style.css" />
+        <option value="$PROJECT_DIR$/css/reportCenter.css" />
+        <option value="$PROJECT_DIR$/js/alarmData.js" />
+        <option value="$PROJECT_DIR$/js/deviceRunTableAjax.js" />
+        <option value="$PROJECT_DIR$/js/stationRunTablePage.js" />
+        <option value="$PROJECT_DIR$/html/alarm.html" />
+        <option value="$PROJECT_DIR$/js/alarmAjax.js" />
+        <option value="$PROJECT_DIR$/html/checkCenter.html" />
+        <option value="$PROJECT_DIR$/css/dataCompare.css" />
+        <option value="$PROJECT_DIR$/js/register.js" />
+        <option value="$PROJECT_DIR$/html/error.html" />
+        <option value="$PROJECT_DIR$/js/checkForm2.js" />
+        <option value="$PROJECT_DIR$/css/stationRunTable.css" />
+        <option value="$PROJECT_DIR$/css/history.css" />
+        <option value="$PROJECT_DIR$/js/checkForm.js" />
+        <option value="$PROJECT_DIR$/css/idManage.css" />
+        <option value="$PROJECT_DIR$/html/idManage.html" />
+        <option value="$PROJECT_DIR$/js/range.js" />
+        <option value="$PROJECT_DIR$/html/register.html" />
+        <option value="$PROJECT_DIR$/js/register2.js" />
+        <option value="$PROJECT_DIR$/html/deviceInformation.html" />
+        <option value="$PROJECT_DIR$/css/essentialInformation.css" />
+        <option value="$PROJECT_DIR$/css/login.css" />
+        <option value="$PROJECT_DIR$/js/addStation.js" />
+        <option value="$PROJECT_DIR$/html/addStation.html" />
+        <option value="$PROJECT_DIR$/css/addStation.css" />
+        <option value="$PROJECT_DIR$/css/device information.css" />
+        <option value="$PROJECT_DIR$/js/edicatInformation.js" />
+        <option value="$PROJECT_DIR$/js/edictInformation.js" />
+        <option value="$PROJECT_DIR$/html/edictInformation.html" />
+        <option value="$PROJECT_DIR$/html/centralizedControl.html" />
+        <option value="$PROJECT_DIR$/html/powerStationDisplay.html" />
+        <option value="$PROJECT_DIR$/html/stationRunTable.html" />
+        <option value="$PROJECT_DIR$/css/informationCenter.css" />
+        <option value="$PROJECT_DIR$/js/TablePage.js" />
+        <option value="$PROJECT_DIR$/css/page.css" />
+        <option value="$PROJECT_DIR$/js/historyTablePage3.js" />
+        <option value="$PROJECT_DIR$/js/historyTableData2.js" />
+        <option value="$PROJECT_DIR$/js/historyTableData.js" />
+        <option value="$PROJECT_DIR$/html/historyTable.html" />
+        <option value="$PROJECT_DIR$/js/historyTable.js" />
+        <option value="$PROJECT_DIR$/js/historyTableAjax2.js" />
+        <option value="$PROJECT_DIR$/js/historyTablePage4.js" />
+        <option value="$PROJECT_DIR$/html/deviceInformation2.html" />
+        <option value="$PROJECT_DIR$/html/test.html" />
+        <option value="$PROJECT_DIR$/html/test2.html" />
+        <option value="$PROJECT_DIR$/html/essential information.html" />
+        <option value="$PROJECT_DIR$/html/testdate.html" />
+        <option value="$PROJECT_DIR$/html/informationCenter.html" />
+        <option value="$PROJECT_DIR$/js/informationCenter.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="光伏电站2.2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="光伏电站2.2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="光伏电站2.2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="光伏电站2.2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_interpreter_path" value="D:/node.js/node" />
+    <property name="js.eslint.eslintPackage" value="" />
+    <property name="js-jscs-nodeInterpreter" value="D:\node.js\node.exe" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\web\web代码\实验室项目\光伏电站2.2\imgs" />
+      <recent name="D:\web\web代码\实验室项目\光伏电站2.2\js" />
+      <recent name="D:\web\web代码\实验室项目\光伏电站2.2\css" />
+      <recent name="D:\web\web代码\实验室项目\光伏电站2.2\html" />
+      <recent name="D:\web\web代码\实验室项目\光伏电站2\html" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\web\web代码\实验室项目\光伏电站2\imgs" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <method />
+    </configuration>
+    <configuration default="true" type="DartTestRunConfigurationType" factoryName="Dart Test">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" value="" />
+      <option name="executablePath" />
+      <option name="filePath" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cb6a832b-dad0-43d1-9cab-9d54f4fb30f2" name="Default" comment="" />
+      <created>1523358200724</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1523358200724</updated>
+      <workItem from="1523358202620" duration="6654000" />
+      <workItem from="1523405693142" duration="8804000" />
+      <workItem from="1523414636743" duration="38000" />
+      <workItem from="1523414791375" duration="3133000" />
+      <workItem from="1523427392110" duration="20520000" />
+      <workItem from="1523492875340" duration="31475000" />
+      <workItem from="1523576695432" duration="36914000" />
+      <workItem from="1523662388146" duration="9082000" />
+      <workItem from="1523672029537" duration="3530000" />
+      <workItem from="1523946618362" duration="11432000" />
+      <workItem from="1523962986206" duration="66000" />
+      <workItem from="1524031216472" duration="22963000" />
+      <workItem from="1524094610313" duration="26404000" />
+      <workItem from="1524136147667" duration="10012000" />
+      <workItem from="1524180912112" duration="10750000" />
+      <workItem from="1524191699404" duration="30283000" />
+      <workItem from="1524267805848" duration="10742000" />
+      <workItem from="1524278752833" duration="935000" />
+      <workItem from="1524300624289" duration="13202000" />
+      <workItem from="1524441723128" duration="23000" />
+      <workItem from="1524450926900" duration="4592000" />
+      <workItem from="1524481518584" duration="9758000" />
+      <workItem from="1524564762866" duration="4352000" />
+      <workItem from="1524613561843" duration="591000" />
+      <workItem from="1524621084101" duration="1616000" />
+      <workItem from="1524653485968" duration="112000" />
+      <workItem from="1524706326465" duration="4588000" />
+      <workItem from="1524786710158" duration="34000" />
+      <workItem from="1524825440533" duration="858000" />
+      <workItem from="1524829248726" duration="2101000" />
+      <workItem from="1524873125744" duration="728000" />
+      <workItem from="1524882702004" duration="877000" />
+      <workItem from="1525232510190" duration="1257000" />
+      <workItem from="1525258611001" duration="87000" />
+      <workItem from="1525261359827" duration="4212000" />
+      <workItem from="1525330272925" duration="85000" />
+      <workItem from="1525691088253" duration="6189000" />
+      <workItem from="1525736102163" duration="5051000" />
+      <workItem from="1525779124006" duration="5565000" />
+      <workItem from="1525823079784" duration="5229000" />
+      <workItem from="1525848803530" duration="12448000" />
+      <workItem from="1525936983514" duration="5065000" />
+      <workItem from="1525942596301" duration="8070000" />
+      <workItem from="1525995978998" duration="890000" />
+      <workItem from="1526020513267" duration="15779000" />
+      <workItem from="1526109224439" duration="4187000" />
+      <workItem from="1526169990686" duration="1387000" />
+      <workItem from="1526256799115" duration="10679000" />
+      <workItem from="1526278788626" duration="13878000" />
+      <workItem from="1526382408077" duration="5837000" />
+      <workItem from="1526427540423" duration="2346000" />
+      <workItem from="1526451176098" duration="10596000" />
+      <workItem from="1526513668553" duration="9035000" />
+      <workItem from="1526541040303" duration="9671000" />
+      <workItem from="1526626374457" duration="6827000" />
+      <workItem from="1526688286418" duration="3737000" />
+      <workItem from="1526714385578" duration="5910000" />
+      <workItem from="1526785739977" duration="19137000" />
+      <workItem from="1526861761976" duration="10534000" />
+      <workItem from="1526948022613" duration="15276000" />
+      <workItem from="1527060816346" duration="1308000" />
+      <workItem from="1527062946911" duration="4705000" />
+      <workItem from="1527077522161" duration="802000" />
+      <workItem from="1527119491946" duration="11910000" />
+      <workItem from="1527147821340" duration="2196000" />
+      <workItem from="1527206770227" duration="2196000" />
+      <workItem from="1527244067676" duration="1476000" />
+      <workItem from="1527261311477" duration="613000" />
+      <workItem from="1527318536284" duration="1611000" />
+      <workItem from="1527493790126" duration="6220000" />
+      <workItem from="1527512139650" duration="241000" />
+      <workItem from="1527596382644" duration="1252000" />
+      <workItem from="1527767348353" duration="1749000" />
+      <workItem from="1527840507801" duration="419000" />
+      <workItem from="1527852242906" duration="4580000" />
+      <workItem from="1527904814599" duration="3838000" />
+      <workItem from="1527988778086" duration="18955000" />
+      <workItem from="1528093708928" duration="14374000" />
+      <workItem from="1528156287001" duration="874000" />
+      <workItem from="1528164397698" duration="4843000" />
+      <workItem from="1528184523709" duration="1425000" />
+      <workItem from="1528202738588" duration="6000" />
+      <workItem from="1528202946524" duration="444000" />
+      <workItem from="1528246300635" duration="30000" />
+      <workItem from="1528269475329" duration="1761000" />
+      <workItem from="1528274188154" duration="11750000" />
+      <workItem from="1528438327883" duration="22215000" />
+      <workItem from="1529561616634" duration="2551000" />
+      <workItem from="1529624573126" duration="33000" />
+      <workItem from="1529655628730" duration="5316000" />
+      <workItem from="1529670585625" duration="125000" />
+      <workItem from="1529717017438" duration="10470000" />
+      <workItem from="1529917610012" duration="37000" />
+      <workItem from="1529940754106" duration="475000" />
+      <workItem from="1529974982663" duration="47000" />
+      <workItem from="1529983522886" duration="4054000" />
+      <workItem from="1530061337046" duration="481000" />
+      <workItem from="1530069891881" duration="3440000" />
+      <workItem from="1530089508013" duration="1281000" />
+      <workItem from="1530150390623" duration="210000" />
+      <workItem from="1530150709976" duration="1221000" />
+      <workItem from="1530234923100" duration="638000" />
+      <workItem from="1530416485116" duration="4214000" />
+      <workItem from="1530493796732" duration="37000" />
+      <workItem from="1530515659266" duration="5959000" />
+      <workItem from="1530579927470" duration="3047000" />
+      <workItem from="1530839560468" duration="2567000" />
+      <workItem from="1530858020251" duration="721000" />
+      <workItem from="1530862689276" duration="8468000" />
+      <workItem from="1531184440358" duration="1533000" />
+      <workItem from="1531188734173" duration="4220000" />
+      <workItem from="1531702723122" duration="3738000" />
+      <workItem from="1531734129301" duration="20000" />
+      <workItem from="1531962680485" duration="10695000" />
+      <workItem from="1532066952410" duration="1428000" />
+      <workItem from="1532078140709" duration="651000" />
+      <workItem from="1532327819486" duration="508000" />
+      <workItem from="1534236827893" duration="2675000" />
+      <workItem from="1534294798673" duration="323000" />
+      <workItem from="1534931845512" duration="652000" />
+      <workItem from="1534933135605" duration="63000" />
+      <workItem from="1534985793559" duration="45000" />
+      <workItem from="1536372752056" duration="8108000" />
+      <workItem from="1537881752962" duration="1472000" />
+      <workItem from="1537883355725" duration="65000" />
+      <workItem from="1538872791451" duration="1128000" />
+      <workItem from="1538887821443" duration="1933000" />
+      <workItem from="1539586070437" duration="235000" />
+      <workItem from="1539599112974" duration="1306000" />
+      <workItem from="1539646913600" duration="830000" />
+      <workItem from="1540270883702" duration="2577000" />
+      <workItem from="1541821195172" duration="1245000" />
+      <workItem from="1542003071998" duration="1979000" />
+      <workItem from="1542257654506" duration="569000" />
+      <workItem from="1542598655705" duration="655000" />
+      <workItem from="1542756524833" duration="571000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="712542000" />
+  </component>
+  <component name="TodoView" selected-index="2">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19196428" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.09819967" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.060556464" sideWeight="0.50545704" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.06100218" sideWeight="0.494543" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/html/powerStationDisplay.html</url>
+          <line>309</line>
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/html/essential information.html</url>
+          <line>317</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/html/dataCompare.html</url>
+          <line>149</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/js/electricityTableAjax.js</url>
+          <line>19</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/js/electricityTableAjax.js</url>
+          <line>18</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/js/pagetest.js</url>
+          <line>64</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="20" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/html/addStation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="18" column="47" lean-forward="false" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/informationCenter.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="24" column="7" lean-forward="false" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/informationCenter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1248">
+          <caret line="52" column="17" lean-forward="false" selection-start-line="52" selection-start-column="17" selection-end-line="52" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/essential information.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6168">
+          <caret line="257" column="32" lean-forward="false" selection-start-line="257" selection-start-column="32" selection-end-line="257" selection-end-column="32" />
+          <folding>
+            <marker date="1538888707450" expanded="true" signature="7526:7568" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/stationRunTable.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2256">
+          <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/addStation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="18" column="47" lean-forward="false" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/informationCenter.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="28" column="7" lean-forward="false" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/informationCenter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1224">
+          <caret line="51" column="17" lean-forward="true" selection-start-line="51" selection-start-column="17" selection-end-line="51" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/essential information.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6168">
+          <caret line="257" column="32" lean-forward="false" selection-start-line="257" selection-start-column="32" selection-end-line="257" selection-end-column="32" />
+          <folding>
+            <marker date="1538888707450" expanded="true" signature="7526:7568" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/stationRunTable.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2256">
+          <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/addStation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="18" column="47" lean-forward="false" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/informationCenter.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="817">
+          <caret line="43" column="8" lean-forward="false" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/essential information.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4883">
+          <caret line="257" column="32" lean-forward="false" selection-start-line="257" selection-start-column="32" selection-end-line="257" selection-end-column="32" />
+          <folding>
+            <marker date="1538888707450" expanded="true" signature="7526:7568" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="45" lean-forward="false" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/stationRunTable.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1786">
+          <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/test.html" />
+    <entry file="file://$PROJECT_DIR$/html/test2.html" />
+    <entry file="file://$PROJECT_DIR$/html/addStation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="47" lean-forward="true" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/informationCenter.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="817">
+          <caret line="43" column="8" lean-forward="false" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/essential information.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4883">
+          <caret line="257" column="32" lean-forward="false" selection-start-line="257" selection-start-column="32" selection-end-line="257" selection-end-column="32" />
+          <folding>
+            <marker date="1538888707450" expanded="true" signature="7526:7568" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="45" lean-forward="true" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/test.html" />
+    <entry file="file://$PROJECT_DIR$/html/test2.html" />
+    <entry file="file://$PROJECT_DIR$/html/stationRunTable.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1786">
+          <caret line="94" column="0" lean-forward="true" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/informationCenter.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="817">
+          <caret line="43" column="8" lean-forward="false" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/essential information.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4864">
+          <caret line="256" column="32" lean-forward="false" selection-start-line="256" selection-start-column="32" selection-end-line="256" selection-end-column="32" />
+          <folding>
+            <marker date="1538888707450" expanded="true" signature="7526:7568" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/test2.html" />
+    <entry file="file://$PROJECT_DIR$/html/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="25" lean-forward="false" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/informationCenter.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1032">
+          <caret line="43" column="8" lean-forward="false" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/essential information.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6144">
+          <caret line="256" column="32" lean-forward="false" selection-start-line="256" selection-start-column="32" selection-end-line="256" selection-end-column="32" />
+          <folding>
+            <marker date="1538888707450" expanded="true" signature="7526:7568" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/test2.html" />
+    <entry file="file://$PROJECT_DIR$/html/informationCenter.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1032">
+          <caret line="43" column="8" lean-forward="false" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/essential information.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6144">
+          <caret line="256" column="32" lean-forward="false" selection-start-line="256" selection-start-column="32" selection-end-line="256" selection-end-column="32" />
+          <folding>
+            <marker date="1538888707450" expanded="true" signature="7526:7568" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/test2.html" />
+    <entry file="file://$PROJECT_DIR$/html/informationCenter.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1032">
+          <caret line="43" column="8" lean-forward="false" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/essential information.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1538888707450" expanded="true" signature="7526:7568" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/test2.html" />
+    <entry file="file://$PROJECT_DIR$/html/essential information.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6168">
+          <caret line="257" column="32" lean-forward="false" selection-start-line="257" selection-start-column="32" selection-end-line="257" selection-end-column="32" />
+          <folding>
+            <marker date="1538888707450" expanded="true" signature="7526:7568" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/laydate/laydate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/testdate.html" />
+    <entry file="file://$PROJECT_DIR$/html/test.html" />
+    <entry file="file://$PROJECT_DIR$/html/test2.html" />
+    <entry file="file://$PROJECT_DIR$/html/stationRunTable.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2256">
+          <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/addStation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="18" column="47" lean-forward="false" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/informationCenter.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="24" column="7" lean-forward="false" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/informationCenter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1248">
+          <caret line="52" column="17" lean-forward="false" selection-start-line="52" selection-start-column="17" selection-end-line="52" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="23" column="22" lean-forward="true" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

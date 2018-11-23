@@ -1,0 +1,163 @@
+html,body{
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background:url("../imgs/login.png");
+  background-position: center 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  color: white;
+}
+.form{
+  width: 27%;
+  height: 70%;
+  margin-left: 36.5%;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+}
+.top{
+  width: 100%;
+  height: 30%;
+  text-align: center;
+}
+.top img{
+  width: 45%;
+}
+.center{
+  width: 100%;
+  height: 60%;
+}
+.bodyTitle{
+  width:100%;
+  height: 20%;
+  font-size: 16px;
+  font-weight: 600;
+}
+.email{
+  display: flex;
+  flex-direction: row;
+  width:100%;
+  height: 20%;
+ border-bottom: 1px solid white;
+}
+.password{
+  display: flex;
+  flex-direction: row;
+  width:100%;
+  height: 20%;
+  border-bottom: 1px solid white;
+}
+.submit{
+  width:100%;
+  height: 20%;
+  color: black;
+  font-size: 16px;
+}
+.center .kong{
+  width:100%;
+  height: 20%;
+}
+.fa-check-circle{
+  font-size: 17px;
+}
+.fa-envelope-o{
+  font-size:25px ;
+}
+.fa-lock{
+  font-size: 37px;
+}
+.email .fontLeft{
+  width: 12%;
+  margin-top: 5%;
+}
+.password .fontLeft{
+  width: 12%;
+  margin-top: 3%;
+}
+
+.email .input{
+  width: 100%;
+  height: 100%;
+  /*border: 1px solid black;*/
+}
+.password  .input{
+  width:100%;
+  height: 100%;
+}
+.email input{
+  width: 100% !important;
+  height: 100% !important;
+  background-color: rgba(255,255,255,0) !important;
+  border: none ;
+  font-size: 16px;
+  /*border: 1px solid white;*/
+}
+input[type="email"]:focus {
+  outline : none;
+}
+input[type="password"]:focus {
+  outline : none;
+}
+.password input{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255,255,255,0);
+  border: none ;
+  font-size: 16px;
+}
+
+
+.submit input{
+  width: 100%;
+  height: 100%;
+  font-size: 17px;
+  font-weight: 600;
+  color: #333333;
+}
+::-webkit-input-placeholder {
+  color: white;
+  padding: 0;
+}
+
+.bottom{
+  width: 100%;
+  height: 10%;
+}
+.bottom .other{
+  width: 100%;
+  height: 100%;
+  text-align: right;
+}
+
+.other .newUser{
+  /*margin-left: 35%;*/
+  margin-top: 6.5%;
+}
+.newUser a{
+  color: white;
+}
+.other .kong{
+  width: 40%;
+}
+
+button,a,input[type=button],input[type=submit]::-moz-focus-inner{outline:0;}
+/*@-moz-document url-prefix() {*/
+  /*.email .fontLeft{*/
+    /*width: 12%;*/
+    /*!*margin-top: 10%;*!*/
+  /*}*/
+  /*.password .fontLeft{*/
+    /*width: 12%;*/
+    /*!*margin-top: 17%;*!*/
+  /*}*/
+  /*input{*/
+    /*border: none !important;*/
+    /*font-size: 18px;*/
+  /*}*/
+   /*!*button,a,input[type=button],input[type=submit]::-moz-focus-inner{outline:0;}*!*/
+/*}*/
+
+

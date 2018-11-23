@@ -1,0 +1,427 @@
+html,body{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background:url("../imgs/login.png");
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+}
+.top{
+    width: 100%;
+    height: 9%;
+    background-color: white;
+    color: white;
+    display: flex;
+    flex-direction: row;
+}
+.top-left{
+    width:40%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.top-left .kong{
+    width: 37%;
+}
+.logo{
+    width: 30%;
+    height: 80%;
+    margin-top: 2.5%;
+}
+.logo img{
+    width: 90%;
+}
+.top-right{
+    width: 60%;
+    height: 100%;
+}
+.top .list{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 0 !important;
+}
+.top .list li {
+    width: 14.3%;
+}
+.top li a{
+    color: black;
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 15%;
+}
+.main{
+    width: 100%;
+    height: 91%;
+}
+
+ .center{
+     width: 90%;
+     height: 99%;
+     margin-left: 5%;
+     margin-top: 1%;
+ }
+.form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.left{
+    width: 70%;
+    height: 100%;
+    margin-right: 5%;
+    border-top: 10px solid #DBB364;
+    color: #333333;
+}
+.left .leftTop{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    flex-direction: row;
+}
+.left .leftTop .confirm{
+    width:40%;
+    height: 100%;
+}
+.left .leftTop .kong2{
+    width: 20%;
+    height: 50%;
+    margin-top: 2%;
+}
+.left .leftTop .guanlian{
+    width: 40%;
+    height: 100%;
+    text-align: center;
+}
+.left .leftTop .confirm input{
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 40%;
+    height: 50%;
+    margin-left: 40%;
+    margin-top: 5%;
+}
+.left .leftTop .confirm button:hover{
+    background-color: rgba(0,0,0,0.8);
+}
+.guanlian button:hover{
+    background-color: rgba(0,0,0,0.8);
+}
+.guanlian button{
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    width: 40%;
+    height: 50%;
+    margin-top: 5%;
+    border-radius: 5px;
+}
+
+.left .leftContent{
+    width: 100%;
+    height:85% ;
+}
+.left .leftContent .box1,.left .leftContent .box2{
+    width: 100%;
+    height: 8%;
+    margin-bottom: 1%;
+    display: flex;
+    flex-direction: row;
+}
+.box1 .side,.box2 .side{
+    width: 15%;
+    height: 100%;
+    background-color:#DBB364;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.box1 .select,.box2 .select{
+    width: 84%;
+    height: 100%;
+    margin-left: 1%;
+    border-radius: 5px;
+    background-color: rgba(255,255,255,0.3);
+    display: flex;
+    flex-direction: row;
+}
+.left .leftContent .box3{
+    width: 50%;
+    height: 8%;
+    margin-left: 35%;
+    margin-bottom: 1%;
+    display: flex;
+    flex-direction: row;
+    border-radius: 5px;
+    background-color: rgba(255,255,255,0.3);
+}
+.left .leftContent .box4{
+    width: 100%;
+    height: 68%;
+    margin-bottom: 1%;
+    display: flex;
+    flex-direction: row;
+}
+.box4 .side{
+    width: 15%;
+    height: 15%;
+    background-color:#DBB364;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.box4 .select{
+    width: 84%;
+    height: 100%;
+    margin-left: 1%;
+    border-radius: 5px;
+    background-color: rgba(255,255,255,0.3);
+}
+.side span{
+    display:inline-block ;
+    margin-top: 8%;
+}
+.box1 .select input{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,0);
+    border: none;
+    border-radius: 5px;
+}
+.box2 .select div input{
+    display: inline-block;
+    margin-top: 8%;
+    margin-right: 10%;
+}
+.box2 .select div{
+    width: 24%;
+    height: 100%;
+    margin-left: 2%;
+}
+
+.box4 .seleTop{
+    width: 100%;
+    height: 17%;
+}
+
+
+ .seleTop #sel{
+     display: inline-block;
+     height: 55%;
+     width: 10%;
+     background-color: #DBB364;
+     margin-right: 2%;
+     margin-left: 2%;
+     margin-top: 1%;
+     border-radius: 5px;
+     border: none;
+ }
+.seleTop #sel1{
+    display: inline-block;
+    height: 55%;
+    width: 25%;
+    background-color: #DBB364;
+    margin-right: 2%;
+    margin-top: 1%;
+    border-radius: 5px;
+    border: none;
+}
+.seleTop #sel3{
+    display: inline-block;
+    height: 55%;
+    width: 25%;
+    background-color: #DBB364;
+    margin-right: 2%;
+    margin-top: 1%;
+    border-radius: 5px;
+    border: none;
+}
+::-webkit-input-placeholder {
+    color: #222222;
+    padding-left: 15px;
+}
+.seleTop button{
+    height: 55%;
+    width: 10%;
+    border: none;
+    border-radius: 5px;
+    margin-top: 1%;
+}
+.box4 .map{
+    width: 100%;
+    height: 83%;
+}
+.map  #container{
+    position: relative;
+    width: 100% !important;
+    height: 100% !important;
+}
+.amap-marker-label{
+    border: none;
+    background-color: rgba(255,255,255,0);
+    color: white;
+}
+
+.right{
+    width: 25%;
+    height: 91%;
+    border-top:10px solid #DBB364;
+    border-left: 1px dotted white;
+    border-right: 1px dotted white;
+    border-bottom: 1px dotted white;
+    margin-bottom: 7%;
+    overflow-y:scroll;
+    /*display: flex;*/
+    /*flex-direction: column;*/
+}
+.right .block{
+    width: 90%;
+    height: 90%;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+.right .box{
+    width: 100%;
+    height: 10%;
+    margin-bottom: 10%;
+    /*border: 1px solid black;*/
+}
+.right .box .boxTitle{
+    width: 100%;
+    height: 45%;
+    /*border: 1px solid black;*/
+}
+.right .box .boxSet{
+    width: 100%;
+    height: 55%;
+    /*border: 1px solid black;*/
+}
+.right .box .boxSet select{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.3);
+    border: none;
+    color: #333333;
+}
+.right input{
+    color: #333333;
+}
+.right .box .dianjia input[type=number]{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.3);
+    border: none;
+}
+
+input[type=range]{
+    width: 100%;
+    margin-bottom: -1%;
+}
+.busheng{
+    display: flex;
+    flex-direction: row;
+}
+.busheng div{
+    width: 15%;
+    font-size: 12px;
+    background-color: rgba(255,255,255,0.3);
+    color: #222222;
+}
+.busheng div span{
+    display: inline-block;
+    margin-top: 15%;
+}
+.busheng input[type=text]{
+    display: block;
+    height: 100%;
+    width: 70%;
+    background-color: rgba(255,255,255,0.3);
+    border: none;
+    /*margin-right: 5%;*/
+}
+.busheng input[type=number]{
+    display: block;
+    height: 100%;
+    width: 15%;
+    background-color: rgba(255,255,255,0.6);
+    border: none;
+}
+.chengben input[type=number]{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255,255,255,0.3);
+    border: none;
+}
+.huankuan{
+    display: flex;
+    flex-direction: row;
+}
+.huankuan div{
+    width: 30%;
+    height: 100%;
+    margin-left: 20%;
+    margin-top: 5%;
+}
+.phoneNum input{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.3);
+    border: none;
+}
+
+
+ .shiqu input,.bizhong input{
+     width: 100%;
+     height: 100%;
+     background-color: rgba(255,255,255,0.3);
+     border: none;
+ }
+.sn input{
+    width: 90%;
+    height: 100%;
+    border: none;
+    background-color: rgba(255,255,255,0.3);
+    margin-right: 2%;
+}
+.sn .fa-plus-square{
+    font-size: 22px;
+}
+.fa-minus-square{
+    font-size: 22px;
+}
+.addSN{
+    width: 100%;
+    height: 6%;
+}
+.addSN input{
+    width: 90%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.3);
+    border: none;
+    margin-bottom: 5%;
+    margin-right: 2%;
+}
+
+.amap-logo {
+    right: -1000px !important;
+    left: auto !important;
+    display: none;
+}
+
+.amap-copyright {
+    right: -1000px !important;
+    left: auto !important;
+}
+
+
+
+

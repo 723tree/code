@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>账号管理</title>
+    <meta name="renderer" content="webkit" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="../css/font-awesome.css" rel="stylesheet" />
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../css/style.css" rel="stylesheet" />
+    <link href="../css/idManage.css" rel="stylesheet" />
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/idManage.js"></script>
+</head>
+<body>
+<div class="top">
+    <div class="top-left">
+        <div class="kong"></div>
+        <div class="logo">
+            <img src="../imgs/logo3.png">
+        </div>
+    </div>
+    <div class="top-right">
+        <ul class="list">
+            <li><a href="informationCenter.html">电站中心</a></li>
+            <li><a href="checkCenter.html">运维中心</a></li>
+            <li><a href="reportCenter.html">报表中心</a></li>
+            <li><a href="centralizedControl.html">展示中心</a></li>
+            <li><a href="idManage.html">账号管理</a></li>
+            <li><a href="login.html" ><span class="fa fa-user"></span></a></li>
+        </ul>
+    </div>
+</div>
+<div class="main">
+    <div class="center">
+        <div class="block1">
+            <div class="title1">
+                <span>账号管理</span>
+            </div>
+        </div>
+        <div class="block2">
+            <div class="box1">
+                <div class="boxTitle">
+                    <span>二级账号建立</span>
+                </div>
+                <div class="boxContent">
+                    <form id="form">
+                        <div class="name input">
+                            <label for="name" class="label1">用户名：</label><input type="email" id="name" placeholder="Email address" class="input1" name="name">
+                        </div>
+                        <div class="password input">
+                            <label for="password" class="label1">密&nbsp;&nbsp;&nbsp;码：</label><input type="text" id="password" placeholder="12345678" class="input1" name="password">
+                        </div>
+                        <div class="confirm input">
+                            <label for="password2" class="label1">确认密码：</label><input type="text" id="password2" placeholder="12345678" class="input1" name="password2">
+                        </div>
+                        <div id="error">
+                        </div>
+                        <div class="input">
+                            <input type="button" class="submit btn" onclick="beforeSubmit()" style="color: white" value="点击创建">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="box2">
+                <div class="boxTitle">
+                    <span>二、三级账号关联</span>
+                </div>
+                <div class="boxContent">
+                    <ul class="nav nav-tabs" >
+                        <li class="active" id="nav1"><a href="#one"data-toggle="tab" style="height: 80%">二级账号</a></li>
+                        <li id="nav2"><a href="#two"data-toggle="tab" style="height: 80%">三级账号</a></li>
+                    </ul>
+                    <div class="form" >
+                        <div class="tab-content">
+                            <div class="tab-pane active fade in " id="one">
+                                <table class="table">
+                                    <tr>
+                                        <td>二级账号</td>
+                                        <td>账号密码</td>
+                                        <td>保存</td>
+                                        <td></td>
+                                    </tr>
+                                    <form>
+                                        <tr>
+                                            <td><input type="text" value="123456" ></td>
+                                            <td><input type="text" value="123456"></td>
+                                            <td><input type="button" value="保存" class="btn btn-xs" /></td>
+                                            <td class="tip"></td>
+                                        </tr>
+                                    </form>
+                                    <form>
+                                        <tr>
+                                            <td><input type="text" value="123456" ></td>
+                                            <td><input type="text" value="123456"></td>
+                                            <td><input type="button" value="保存" class="btn btn-xs" /></td>
+                                            <td class="tip"></td>
+                                        </tr>
+                                    </form>
+                                    <form>
+                                        <tr>
+                                            <td><input type="text" value="123456" ></td>
+                                            <td><input type="text" value="123456"></td>
+                                            <td><input type="button" value="保存" class="btn btn-xs" /></td>
+                                            <td class="tip"></td>
+                                        </tr>
+                                    </form>
+                                    <form>
+                                        <tr>
+                                            <td><input type="text" value="123456" ></td>
+                                            <td><input type="text" value="123456"></td>
+                                            <td><input type="button" value="保存" class="btn btn-xs" /></td>
+                                            <td class="tip"></td>
+                                        </tr>
+                                    </form>
+                                    <form>
+                                        <tr>
+                                            <td><input type="text" value="123456" ></td>
+                                            <td><input type="text" value="123456"></td>
+                                            <td><input type="button" value="保存" class="btn btn-xs" /></td>
+                                            <td class="tip"></td>
+                                        </tr>
+                                    </form>
+                                </table>
+                                <div class="page">
+                                    <ul class="pagination text-center pagination-xs">
+                                        <li class="bg"><a href="#">前一页</a></li>
+                                        <li class="lg"><a href="#">&laquo;</a></li>
+                                        <li class="active bg"><a href="#">1</a></li>
+                                        <li class="lg"><a href="#">&raquo;</a></li>
+                                        <li class="bg"><a href="#">下一页</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="two">
+                                <table class="table">
+                                    <tr>
+                                        <td>三级账号</td>
+                                        <td>账号密码</td>
+                                        <td>保存</td>
+                                    </tr>
+                                    <form>
+                                        <tr>
+                                            <td><input type="text" value="123456" ></td>
+                                            <td><input type="text" value="123456"></td>
+                                            <td><input type="button" value="保存" class="btn btn-xs" /></td>
+                                            <td class="tip"></td>
+                                        </tr>
+                                    </form>
+                                    <form>
+                                        <tr>
+                                            <td><input type="text" value="123456" ></td>
+                                            <td><input type="text" value="123456"></td>
+                                            <td><input type="button" value="保存" class="btn btn-xs" /></td>
+                                            <td class="tip"></td>
+                                        </tr>
+                                    </form>
+                                    <form>
+                                        <tr>
+                                            <td><input type="text" value="123456" ></td>
+                                            <td><input type="text" value="123456"></td>
+                                            <td><input type="button" value="保存" class="btn btn-xs" /></td>
+                                            <td class="tip"></td>
+                                        </tr>
+                                    </form>
+                                    <form>
+                                        <tr>
+                                            <td><input type="text" value="123456" ></td>
+                                            <td><input type="text" value="123456"></td>
+                                            <td><input type="button" value="保存" class="btn btn-xs" /></td>
+                                            <td class="tip"></td>
+                                        </tr>
+                                    </form>
+                                    <form>
+                                        <tr>
+                                            <td><input type="text" value="123456" ></td>
+                                            <td><input type="text" value="123456"></td>
+                                            <td><input type="button" value="保存" class="btn btn-xs" /></td>
+                                            <td class="tip"></td>
+                                        </tr>
+                                    </form>
+                                </table>
+                                <div class="page">
+                                    <ul class="pagination pagination-xs text-center">
+                                        <li class="bg"><a href="#">前一页</a></li>
+                                        <li class="lg"><a href="#">&laquo;</a></li>
+                                        <li class="active bg"><a href="#">1</a></li>
+                                        <li class="lg"><a href="#">&raquo;</a></li>
+                                        <li class="bg"><a href="#">下一页</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="button">
+                            <a href="associate.html" class="btn">关联账号</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+//    var num=2;
+    var one = document.getElementById("one")
+    var two = document.getElementById("two")
+    var nav1 = document.getElementById("nav1")
+    var nav2 = document.getElementById("nav2")
+    if (num==1){
+        one.classList.add("active","in");
+        nav1.classList.add("active");
+        two.classList.remove("active","in");
+        nav2.classList.remove("active");
+    }
+    if (num==2){
+        two.classList.add("active","in");
+        nav2.classList.add("active");
+        one.classList.remove("active","in");
+        nav1.classList.remove("active");
+    }
+
+</script>
+</body>
+</html>

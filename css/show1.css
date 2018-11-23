@@ -1,0 +1,198 @@
+html,body {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    -webkit-font-smoothing: antialiased;
+}
+.amap-marker-label{
+    border: none;
+    background-color: rgba(255,255,255,0);
+    color: white;
+}
+.top{
+    height: 9%;
+    background-color: white;
+    color: black;
+}
+.top-left{
+    height: 100%;
+}
+.top-left .logo{
+    width:50%;
+    height: 80%;
+    margin-top: 2%;
+    margin-left: 25%;
+}
+.logo img{
+    width: 90%;
+}
+
+.top-center{
+    height: 100%;
+}
+.time{
+    width: 100%;
+    text-align: center;
+    font-size: 19px;
+    margin-top: 3.5%;
+}
+.top-right{
+    height: 100%;
+}
+.top-right .search{
+    margin-top: 3%;
+    width: 60%;
+    margin-left: 25%;
+}
+form input{
+    border-right: none !important;
+    border-left: 1px solid black !important;
+    border-top: 1px solid black !important;
+    border-bottom: 1px solid black !important;
+    height: 35px !important;
+}
+.btn-primary{
+    background-color: white !important;
+    border-left: none !important;
+    margin-left: -10px;
+    border-right: 1px solid black !important;
+    border-top: 1px solid black !important;
+    border-bottom: 1px solid black !important;
+    border-bottom-left-radius:0 !important;
+    border-top-left-radius:0 !important;
+    height: 35px !important;
+}
+.fa-search{
+    color: black;
+}
+.top-right .search form{
+    display: flex;
+    flex-direction: row;
+}
+form .bhome{
+    display: inline-block;
+    color: black;
+    margin-left: 10%;
+    margin-top: 2%;
+    font-size: 19px;
+}
+
+.main{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+}
+.main-left{
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+}
+.main-left .sun{
+    width: 100%;
+    height: 20%;
+    /*border: 1px solid white ;*/
+    color: white;
+    display: flex;
+    flex-direction: row;
+    font-size: 15px;
+    margin-left: 5%;
+}
+.sun .weaIcon{
+    width: 25%;
+    height: 100%;
+}
+.weaIcon .img{
+    margin-top: 15%;
+    margin-left: 5%;
+}
+
+.weaIcon img{
+    width: 90%;
+}
+
+.sun .weather{
+    width: 28%;
+    height: 100%;
+    /*border: 1px solid white ;*/
+}
+.weather .weaContent{
+    margin-top: 25%;
+    margin-left: 12%;
+}
+.weaContent .weaData{
+    margin-top: 5%;
+}
+.sun .upDown{
+    width: 47%;
+    height: 100%;
+    /*border: 1px solid white ;*/
+}
+.upDown .udContent{
+    margin-top: 14%;
+    margin-left: 8%;
+}
+.udContent .down{
+    margin-top: 3.5%;
+}
+.main-left .list{
+    width: 75%;
+    height: 70%;
+    margin-top: 10%;
+    margin-left: 10%;
+}
+.list .box{
+    width: 100%;
+    height: 27%;
+    margin-bottom: 10%;
+}
+.box-top{
+    width: 100%;
+    height: 25%;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    background-color: rgba(218,179,100,0.9);
+    margin-bottom: 2%;
+}
+.box .content{
+    background-color: rgba(255,255,255,0.6);
+    height: 75%;
+    width: 100%;
+}
+.content .conData{
+    font-size: 22px;
+    font-weight: 800;
+    color: dimgrey;
+    padding-top: 11%;
+    width: 100%;
+    text-align: center;
+}
+.main-right{
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+}
+.main-right .sun{
+    width: 100%;
+    height: 20%;
+}
+.main-right .list{
+    width: 75%;
+    height: 70%;
+    margin-top: 10%;
+    margin-left: 10%;
+}
+.amap-logo {
+    right: -1000px !important;
+    left: auto !important;
+    display: none;
+}
+
+.amap-copyright {
+    right: -1000px !important;
+    left: auto !important;
+}

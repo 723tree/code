@@ -1,0 +1,139 @@
+html,body{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background:url("../imgs/bg.png");
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    color: white;
+}
+.top{
+    width: 100%;
+    height: 9%;
+    background-color: white;
+    color: white;
+    display: flex;
+    flex-direction: row;
+}
+.top-left{
+    width:40%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.top-left .kong{
+    width: 37%;
+}
+.logo{
+    width: 30%;
+    height: 80%;
+    margin-top: 2.5%;
+}
+.logo img{
+    width: 90%;
+}
+.top-right{
+    width: 60%;
+    height: 100%;
+}
+.list{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 0 !important;
+}
+.list li {
+    width: 14.3%;
+}
+li a{
+    color: black;
+    display: inline-block;
+    margin-top: 15%;
+}
+.main{
+    width: 100%;
+    height: 91%;
+}
+.center{
+    width: 60%;
+    height: 55%;
+    margin-top: 10%;
+    margin-left: 20%;
+    display: flex;
+    flex-direction: column;
+}
+.block{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+}
+.block1 .box{
+    width: 28%;
+    height: 90%;
+    margin-left: 4%;
+    margin-bottom: 10%;
+}
+.block2 .box1{
+    width: 42%;
+    height: 90%;
+    margin-left: 4%;
+    margin-top: 2%;
+}
+.block2 .box2{
+    width: 42%;
+    height: 90%;
+    margin-left: 8%;
+    margin-top: 2%;
+}
+.boxTop{
+    width:100%;
+    height: 50%;
+    background-color: #DBB364;
+}
+.boxBottom{
+    width: 100%;
+    height: 50%;
+    background-color: rgba(194,190,176,0.5);
+}
+
+ .box a{
+     display: block;
+     width: 100%;
+     height: 100%;
+ }
+.topTitle{
+    width: 100%;
+    height: 50%;
+    color: white;
+    font-size: 16px;
+}
+.topTitle span{
+    display: inline-block;
+    margin-left: 5%;
+    margin-top: 4%;
+}
+.topDetile{
+    width: 100%;
+    height: 40%;
+    color: white;
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden ;
+    text-overflow: ellipsis ;
+}
+.topDetile span{
+    display: inline-block;
+    margin-left: 2%;
+}
+.boxBottom span{
+    display: inline-block;
+    margin-top: 10%;
+    margin-left: 5%;
+    color:#333333;
+    font-size: 15px;
+}

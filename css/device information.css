@@ -1,0 +1,182 @@
+
+.pagination .bg a{
+    background-color:rgba(255,255,255,0)!important ;
+    padding-left:10% ;
+    padding-right:10% ;
+    color: black;
+    border-color:rgba(255,255,255,0)!important  ;
+}
+.pagination .lg a{
+    padding-left:4% ;
+    padding-right:4% ;
+}
+.title{
+    font-size: 14px;
+    font-weight: bold;
+}
+.title td{
+    background-color: #DBB364 !important;
+}
+tr{
+    text-align: center;
+    color: #333333;
+}
+.one td,.three td, .four td{
+    border-color: orange !important;
+}
+.odd td{
+    background-color: white!important;
+}
+.even td{
+    background-color: #EAD3A5!important;
+}
+
+.left{
+    width: 18%;
+    height: 60%;
+    margin-top: 7%;
+}
+.side{
+    width: 55%;
+    height: 100%;
+    margin-left: 25%;
+}
+.side .box{
+    height: 14%;
+    margin-bottom: 20%;
+    /*border: 1px solid white;*/
+}
+.box span{
+    display: inline-block;
+    margin-top: 5%;
+    color: white;
+}
+.box button{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.3);
+    border: none;
+    color: white;
+    font-size: 12px;
+}
+.box button:hover{
+    background-color: rgba(255,255,255,0.3)!important;
+    color: white !important;
+}
+.box button:visited{
+    background-color: rgba(255,255,255,0.3)!important;
+    color: white !important;
+}
+.dropdown-menu{
+    background-color:rgba(255,255,255,0.5)!important;
+}
+.dropdown-menu ul{
+    padding: 1px;
+    background-color: rgba(255,255,255,0.5)!important;
+}
+.dropdown-menu li:hover{
+    background-color: rgba(255,255,255,0.5)!important;
+}
+
+.box input{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.3);
+    border: none;
+    color: white;
+    font-size: 12px;
+}
+::-webkit-input-placeholder {
+    color: white;
+    text-align: center;
+}
+
+
+.main{
+    width: 100%;
+    height: 91%;
+    display: flex;
+    flex-direction: row;
+}
+.center{
+    width: 64%;
+    height: 92%;
+    margin-top: 2%;
+    background-color: rgba(255,255,255,0.3);
+}
+.center .block{
+    width: 96%;
+    margin:2%;
+    height:96%;
+    overflow-y:scroll;
+}
+.block .tabul{
+    width: 100%;
+    height: 8%;
+    background-color: #DBB364 !important;
+}
+.block .tabul  li{
+    list-style: none;
+    float: left;
+    width: 10%;
+    height: 100%;
+    font-size: 15px;
+    color: black;
+    text-align: center;
+    position: relative;
+    left: -40px;
+}
+.block .tabul  li:hover{
+    background-color: #EAD3A5;
+}
+.block .tabul  .active{
+    background-color: white;
+}
+.block .tabul li span{
+    display: inline-block;
+    margin-top: 12%;
+}
+.block .con{
+    width: 100%;
+    height: 100%;
+}
+.block .con table{
+    width: 100%;
+    border: 1px solid black;
+}
+.page{
+    width: 100%;
+    height: 10%;
+    padding-top: 0.3%;
+}
+.pagination{
+    width: 60%;
+    height: 100%;
+    position: relative;
+    top:-210%;
+    margin-left: 38%;
+}
+.pagination .bg a{
+    background-color:rgba(255,255,255,0)!important ;
+    padding-left:10% ;
+    padding-right:10% ;
+    color: black;
+    border-color:rgba(255,255,255,0)!important  ;
+}
+.pagination .lg a{
+    padding-left:4% ;
+    padding-right:4% ;
+}
+.strength{
+    margin-left: 5px;
+}
+.box select{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.3);
+    padding-left: 32%;
+    border: none;
+}
+.time-hour{
+    margin-right: 5px;
+}

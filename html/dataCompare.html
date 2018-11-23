@@ -1,0 +1,760 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>电站数据比较</title>
+    <meta name="renderer" content="webkit" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="../css/font-awesome.css" rel="stylesheet" />
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../css/style.css" rel="stylesheet" />
+    <link href="../css/dataCompare.css" rel="stylesheet" />
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/echarts.js"></script>
+</head>
+<body>
+<div class="top">
+    <div class="top-left">
+        <div class="kong"></div>
+        <div class="logo">
+            <img src="../imgs/logo3.png">
+        </div>
+    </div>
+    <div class="top-right">
+        <ul class="list">
+            <li><a href="informationCenter.html">电站中心</a></li>
+            <li><a href="checkCenter.html">运维中心</a></li>
+            <li><a href="reportCenter.html">报表中心</a></li>
+            <li><a href="centralizedControl.html">展示中心</a></li>
+            <li><a href="associate.html">账号管理</a></li>
+            <li><a href="login.html" ><span class="fa fa-user"></span></a></li>
+        </ul>
+    </div>
+</div>
+<div class="main" id="main">
+    <div class="left">
+        <div class="side" id="tab">
+            <div class="box">
+                <button><span>电站功率</span></button>
+            </div>
+            <div class="box">
+                <button><span>日电量</span></button>
+            </div>
+            <div class="box">
+                <button><span>总电量</span></button>
+            </div>
+        </div>
+    </div>
+    <div class="center">
+        <div class="cenTop"></div>
+        <div class="content">
+            <div class="box">
+                <div class="chart" id="chart1">
+                    <script type="text/javascript">
+                        var myChart=echarts.init(document.getElementById('chart1'));
+                        option = {
+                            title:{
+                                text:'襄阳站',
+                                left:'left',
+                                show:true,
+                                subtext:'电站功率(单位：w)',
+                                textStyle:{
+                                    color:'darkgray',
+                                    fontSize:12
+                                }
+                            },
+                            tooltip:{
+                                trigger: 'axis',
+                            },
+                            toolbox: {
+                                feature: {
+                                    dataZoom: {
+                                        yAxisIndex: 'none'
+                                    },
+                                    restore: {},
+                                    saveAsImage: {},
+                                },
+                                right:'25px',
+                                top:'5px'
+                            },
+                            xAxis: {
+                                type: 'category',
+                                boundaryGap: false,
+                                data: ['00:00', '8:00', '9:15', '9:30', '9:45', '10:00', '10:15','10:30'],
+                                axisLine: {
+                                    lineStyle: {
+                                        type: 'solid',
+                                        color:'darkgray',
+                                    }
+                                },
+                                axisLabel: {
+                                    textStyle: {
+                                        color: 'darkgray',
+                                        fontSize:12
+                                    }
+                                }
+                            },
+                            yAxis: {
+                                type: 'value',
+                                axisLine: {
+                                    lineStyle: {
+                                        type: 'solid',
+                                        color:'darkgray'
+                                    }
+                                },
+                                axisLabel: {
+                                    textStyle: {
+                                        color: 'darkgray',
+                                        fontSize:8
+
+                                    }
+                                },
+                                axisTick: {
+                                    show: false
+                                }
+                            },
+                            series: [{
+                                data: [0,0,0,0,1800,3000,7000,0],
+                                type: 'line',
+                                smooth:true,
+                                symbol: 'none',
+                                sampling: 'average',
+                                itemStyle: {
+                                    normal: {
+                                        color: 'rgb(106,220,164)'
+                                    }
+                                },
+                                areaStyle: {
+                                    normal: {
+                                        color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                                            offset: 0,
+                                            color: 'rgb(139,233,183)'
+                                        }, {
+                                            offset: 1,
+                                            color: 'rgb(139,233,183)'
+                                        }])
+                                    }
+                                }
+                            }],
+                        };
+                        myChart.setOption(option);
+                    </script>
+                </div>
+            </div>
+            <div class="box">
+                <div class="chart" id="chart2">
+                    <script type="text/javascript">
+                        var myChart=echarts.init(document.getElementById('chart2'));
+                        option = {
+                            title:{
+                                text:'苏州站',
+                                left:'left',
+                                show:true,
+                                subtext:'电站功率(单位：w)',
+                                textStyle:{
+                                    color:'darkgray',
+                                    fontSize:12
+                                }
+                            },
+                            tooltip:{
+                                trigger: 'axis',
+                            },
+                            toolbox: {
+                                feature: {
+                                    dataZoom: {
+                                        yAxisIndex: 'none'
+                                    },
+                                    restore: {},
+                                    saveAsImage: {},
+                                },
+                                right:'25px',
+                                top:'5px'
+                            },
+                            xAxis: {
+                                type: 'category',
+                                boundaryGap: false,
+                                data: ['00:00', '8:00', '9:15', '9:30', '9:45', '10:00', '10:15','10:30'],
+                                axisLine: {
+                                    lineStyle: {
+                                        type: 'solid',
+                                        color:'darkgray',
+                                    }
+                                },
+                                axisLabel: {
+                                    textStyle: {
+                                        color: 'darkgray',
+                                        fontSize:12
+                                    }
+                                }
+                            },
+                            yAxis: {
+                                type: 'value',
+                                axisLine: {
+                                    lineStyle: {
+                                        type: 'solid',
+                                        color:'darkgray',
+                                    }
+                                },
+                                axisLabel: {
+                                    textStyle: {
+                                        color: 'darkgray',
+                                        fontSize:8
+                                    }
+                                },
+                                axisTick: {
+                                    show: false
+                                }
+                            },
+                            series: [{
+                                data: [0,3000,13000,16000,15000,12000,9000,0],
+                                type: 'line',
+                                smooth:true,
+                                symbol: 'none',
+                                sampling: 'average',
+                                itemStyle: {
+                                    normal: {
+                                        color: 'rgb(106,220,164)'
+                                    }
+                                },
+                                areaStyle: {
+                                    normal: {
+                                        color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                                            offset: 0,
+                                            color: 'rgb(139,233,183)'
+                                        }, {
+                                            offset: 1,
+                                            color: 'rgb(139,233,183)'
+                                        }])
+                                    }
+                                }
+                            }]
+                        };
+                        myChart.setOption(option);
+                    </script>
+                </div>
+            </div>
+            <div class="box" >
+                <div class="chart" id="chart3">
+                    <script type="text/javascript">
+                    var myChart=echarts.init(document.getElementById('chart3'));
+                    option = {
+                        title:{
+                            text:'上海站',
+                            left:'left',
+                            show:true,
+                            subtext:'电站功率(单位：w)',
+                            textStyle:{
+                                color:'darkgray',
+                                fontSize:12
+                            }
+                        },
+                        tooltip:{
+                            trigger: 'axis',
+                        },
+                        toolbox: {
+                            feature: {
+                                dataZoom: {
+                                    yAxisIndex: 'none'
+                                },
+                                restore: {},
+                                saveAsImage: {},
+                            },
+                            right:'25px',
+                            top:'5px'
+                        },
+                        xAxis: {
+                            type: 'category',
+                            boundaryGap: false,
+                            data: ['00:00', '8:00', '9:15', '9:30', '9:45', '10:00', '10:15','10:30'],
+                            axisLine: {
+                                lineStyle: {
+                                    type: 'solid',
+                                    color:'darkgray',
+                                }
+                            },
+                            axisLabel: {
+                                textStyle: {
+                                    color: 'darkgray',
+                                    fontSize:12
+                                }
+                            },
+                            axisTick: {
+                                show: false
+                            }
+                        },
+                        yAxis: {
+                            type: 'value',
+                            axisLine: {
+                                lineStyle: {
+                                    type: 'solid',
+                                    color:'darkgray',
+                                }
+                            },
+                            axisLabel: {
+                                textStyle: {
+                                    color: 'darkgray',
+                                    fontSize:8
+                                }
+                            }
+                        },
+                        series: [{
+                            data: [0,300,900,1200,1600,700,600,0],
+                            type: 'line',
+                            smooth:true,
+                            symbol: 'none',
+                            sampling: 'average',
+                            itemStyle: {
+                                normal: {
+                                    color: 'rgb(106,220,164)'
+                                }
+                            },
+                            areaStyle: {
+                                normal: {
+                                    color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                                        offset: 0,
+                                        color: 'rgb(139,233,183)'
+                                    }, {
+                                        offset: 1,
+                                        color: 'rgb(139,233,183)'
+                                    }])
+                                }
+                            }
+                        }]
+                    };
+                    myChart.setOption(option);
+                </script>
+                </div>
+            </div>
+        </div>
+        <div class="content" style="display: none" >
+            <div class="box">
+                <div class="chart" id="chart4">
+                    <script type="text/javascript">
+                        var myChart=echarts.init(document.getElementById('chart4'));
+                        option = {
+                            title:{
+                                text:'襄阳站',
+                                left:'left',
+                                show:true,
+                                subtext:'日电量(单位：w)',
+                                textStyle:{
+                                    color:'darkgray',
+                                    fontSize:12
+                                }
+                            },
+                            tooltip:{
+                                trigger:'axis'
+                            },
+
+                            xAxis:{
+                                data:['2018/5/17'],
+                                axisLine: {
+                                    lineStyle: {
+                                        type: 'solid',
+                                        color:'darkgray',
+                                    }
+                                },
+                                axisLabel: {
+                                    textStyle: {
+                                        color: 'darkgray',
+                                        fontSize:12
+                                    }
+                                }
+                            },
+                            yAxis:{
+                                axisLine: {
+                                    lineStyle: {
+                                        type: 'solid',
+                                        color:'darkgray',
+                                    }
+                                },
+                                axisLabel: {
+                                    textStyle: {
+                                        color: 'darkgray',
+                                        fontSize:8
+                                    }
+                                },
+                                axisTick: {
+                                    show: false
+                                }
+                            },
+                            series:[{
+                                name:'日电量',
+                                type:'bar',
+                                data:[5000],
+                                barWidth : 50,
+                                itemStyle:{
+                                    normal:{
+                                        color: 'rgb(106,220,164)'
+                                    }
+                                }
+                            }]
+                        };
+                        myChart.setOption(option);
+                    </script>
+                </div>
+            </div>
+            <div class="box">
+                <div class="chart" id="chart5">
+                    <script type="text/javascript">
+                        var myChart=echarts.init(document.getElementById('chart5'));
+                        option = {
+                            title:{
+                                text:'苏州站',
+                                left:'left',
+                                show:true,
+                                subtext:'日电量(单位：w)',
+                                textStyle:{
+                                    color:'darkgray',
+                                    fontSize:12
+                                }
+                            },
+                            tooltip:{
+                                trigger:'axis'
+                            },
+
+                            xAxis:{
+                                data:['2018/5/17'],
+                                axisLine: {
+                                    lineStyle: {
+                                        type: 'solid',
+                                        color:'darkgray',
+                                    }
+                                },
+                                axisLabel: {
+                                    textStyle: {
+                                        color: 'darkgray',
+                                        fontSize:12
+                                    }
+                                }
+                            },
+                            yAxis:{
+                                axisLine: {
+                                    lineStyle: {
+                                        type: 'solid',
+                                        color:'darkgray',
+                                    }
+                                },
+                                axisLabel: {
+                                    textStyle: {
+                                        color: 'darkgray',
+                                        fontSize:8
+                                    }
+                                },
+                                axisTick: {
+                                    show: false
+                                }
+                            },
+                            series:[{
+                                name:'日电量',
+                                type:'bar',
+                                data:[5000],
+                                barWidth : 50,
+                                itemStyle:{
+                                    normal:{
+                                        color: 'rgb(106,220,164)'
+                                    }
+                                }
+                            }]
+                        };
+                        myChart.setOption(option);
+                    </script>
+                </div>
+            </div>
+            <div class="box">
+                <div class="chart" id="chart6">
+                    <script type="text/javascript">
+                        var myChart=echarts.init(document.getElementById('chart6'));
+                        option = {
+                            title:{
+                                text:'上海站',
+                                left:'left',
+                                show:true,
+                                subtext:'日电量(单位：w)',
+                                textStyle:{
+                                    color:'darkgray',
+                                    fontSize:12
+                                }
+                            },
+                            tooltip:{
+                                trigger:'axis'
+                            },
+
+                            xAxis:{
+                                data:['2018/5/17'],
+                                axisLine: {
+                                    lineStyle: {
+                                        type: 'solid',
+                                        color:'darkgray',
+                                    }
+                                },
+                                axisLabel: {
+                                    textStyle: {
+                                        color: 'darkgray',
+                                        fontSize:12
+                                    }
+                                }
+                            },
+                            yAxis:{
+                                axisLine: {
+                                    lineStyle: {
+                                        type: 'solid',
+                                        color:'darkgray',
+                                    }
+                                },
+                                axisLabel: {
+                                    textStyle: {
+                                        color: 'darkgray',
+                                        fontSize:8
+                                    }
+                                },
+                                axisTick: {
+                                    show: false
+                                }
+                            },
+                            series:[{
+                                name:'日电量',
+                                type:'bar',
+                                data:[5000],
+                                barWidth : 50,
+                                itemStyle:{
+                                    normal:{
+                                        color: 'rgb(106,220,164)'
+                                    }
+                                }
+                            }]
+                        };
+                        myChart.setOption(option);
+                    </script>
+                </div>
+            </div>
+        </div>
+        <div class="content" style="display: none" >
+            <div class="box">
+                <div class="chart" id="chart7">
+                    <script type="text/javascript">
+                        var myChart=echarts.init(document.getElementById('chart7'));
+                        option = {
+                            title:{
+                                text:'襄阳站',
+                                left:'left',
+                                show:true,
+                                subtext:'总电量(单位：w)',
+                                textStyle:{
+                                    color:'darkgray',
+                                    fontSize:12
+                                }
+                            },
+                            tooltip:{
+                                trigger:'axis'
+                            },
+
+                            xAxis:{
+                                data:['总电量'],
+                                axisLine: {
+                                    lineStyle: {
+                                        type: 'solid',
+                                        color:'darkgray',
+                                    }
+                                },
+                                axisLabel: {
+                                    textStyle: {
+                                        color: 'darkgray',
+                                        fontSize:12
+                                    }
+                                }
+                            },
+                            yAxis:{
+                                axisLine: {
+                                    lineStyle: {
+                                        type: 'solid',
+                                        color:'darkgray',
+                                    }
+                                },
+                                axisLabel: {
+                                    textStyle: {
+                                        color: 'darkgray',
+                                        fontSize:8
+                                    }
+                                },
+                                axisTick: {
+                                    show: false
+                                }
+                            },
+                            series:[{
+                                name:'总电量',
+                                type:'bar',
+                                data:[5000],
+                                barWidth : 50,
+                                itemStyle:{
+                                    normal:{
+                                        color: 'rgb(106,220,164)'
+                                    }
+                                }
+                            }]
+                        };
+                        myChart.setOption(option);
+                    </script>
+                </div>
+            </div>
+            <div class="box">
+                <div class="chart" id="chart8">
+                    <script type="text/javascript">
+                        var myChart=echarts.init(document.getElementById('chart8'));
+                        option = {
+                            title:{
+                                text:'苏州站',
+                                left:'left',
+                                show:true,
+                                subtext:'总电量(单位：w)',
+                                textStyle:{
+                                    color:'darkgray',
+                                    fontSize:12
+                                }
+                            },
+                            tooltip:{
+                                trigger:'axis'
+                            },
+
+                            xAxis:{
+                                data:['总电量'],
+                                axisLine: {
+                                    lineStyle: {
+                                        type: 'solid',
+                                        color:'darkgray',
+                                    }
+                                },
+                                axisLabel: {
+                                    textStyle: {
+                                        color: 'darkgray',
+                                        fontSize:12
+                                    }
+                                }
+                            },
+                            yAxis:{
+                                axisLine: {
+                                    lineStyle: {
+                                        type: 'solid',
+                                        color:'darkgray',
+                                    }
+                                },
+                                axisLabel: {
+                                    textStyle: {
+                                        color: 'darkgray',
+                                        fontSize:8
+                                    }
+                                },
+                                axisTick: {
+                                    show: false
+                                }
+                            },
+                            series:[{
+                                name:'总电量',
+                                type:'bar',
+                                data:[5000],
+                                barWidth : 50,
+                                itemStyle:{
+                                    normal:{
+                                        color: 'rgb(106,220,164)'
+                                    }
+                                }
+                            }]
+                        };
+                        myChart.setOption(option);
+                    </script>
+                </div>
+            </div>
+            <div class="box">
+                <div class="chart" id="chart9">
+                    <script type="text/javascript">
+                        var myChart=echarts.init(document.getElementById('chart9'));
+                        option = {
+                            title:{
+                                text:'上海站',
+                                left:'left',
+                                show:true,
+                                subtext:'总电量(单位：w)',
+                                textStyle:{
+                                    color:'darkgray',
+                                    fontSize:12
+                                }
+                            },
+                            tooltip:{
+                                trigger:'axis'
+                            },
+
+                            xAxis:{
+                                data:['总电量'],
+                                axisLine: {
+                                    lineStyle: {
+                                        type: 'solid',
+                                        color:'darkgray',
+                                    }
+                                },
+                                axisLabel: {
+                                    textStyle: {
+                                        color: 'darkgray',
+                                        fontSize:12
+                                    }
+                                }
+                            },
+                            yAxis:{
+                                axisLine: {
+                                    lineStyle: {
+                                        type: 'solid',
+                                        color:'darkgray',
+                                    }
+                                },
+                                axisLabel: {
+                                    textStyle: {
+                                        color: 'darkgray',
+                                        fontSize:8
+                                    }
+                                },
+                                axisTick: {
+                                    show: false
+                                }
+                            },
+                            series:[{
+                                name:'总电量',
+                                type:'bar',
+                                data:[5000],
+                                barWidth : 50,
+                                itemStyle:{
+                                    normal:{
+                                        color: 'rgb(106,220,164)'
+                                    }
+                                }
+                            }]
+                        };
+                        myChart.setOption(option);
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    window.onload = function () {
+//        tab选项卡
+        var tab=document.getElementById('tab');
+        var lis=tab.getElementsByClassName('box');
+        var content=document.getElementsByClassName('content');
+        for(var i=0;i<lis.length;i++){
+            lis[i].xuhao=i;
+            lis[i].onclick=function () {
+                for(var j=0;j<content.length;j++){
+                    content[j].style.display='none';
+                }
+                content[this.xuhao].style.display='block';
+                content[this.xuhao].style.display='flex';
+                content[this.xuhao].style.flexDirection='row';
+            }
+        }
+    }
+</script>
+</body>
+</html>

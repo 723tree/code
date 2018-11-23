@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>电站信息中心</title>
+    <meta name="renderer" content="webkit" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="../css/font-awesome.css" rel="stylesheet" />
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../css/informationCenter.css" rel="stylesheet" />
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/echarts.js"></script>
+    <script src="../js/informationCenter.js"></script>
+</head>
+<style>
+    .lineHeight span, .lineHeight input , .lineHeight a{
+        display: inline-block;
+        margin-top: 30px;
+    }
+</style>
+<script>
+    $(document).ready(function(){
+        odd= {"background":"white"};//奇数样式
+        even={"background":"#EDD9B1",};//偶数样式
+        odd_even("#dataTable",odd,even);
+    });
+    function odd_even(id,odd,even) {
+        $(id).find("tr").each(function (index, element) {
+            if (index % 2 == 1)
+                $(this).css(odd);
+            else
+                $(this).css(even);
+        });
+    }
+</script>
+<body>
+<div class="top">
+    <div class="top-left">
+        <div class="kong"></div>
+        <div class="logo">
+            <img src="../imgs/logo3.png">
+        </div>
+    </div>
+    <div class="top-right">
+        <ul class="list">
+            <li><a href="informationCenter.html">电站中心</a></li>
+            <li><a href="checkCenter.html">运维中心</a></li>
+            <li><a href="reportCenter.html">报表中心</a></li>
+            <li><a href="centralizedControl.html">展示中心</a></li>
+            <li><a href="associate.html">账号管理</a></li>
+            <li><a href="login.html" ><span class="fa fa-user"></span></a></li>
+        </ul>
+    </div>
+</div>
+<div class="main">
+    <div class="center">
+        <div class="block1">
+            <div class="content">
+                <div class="title">
+                    <span>电站中心</span>
+                </div>
+                <div class="detail">
+                    <div class="box">
+                        <div class="num">
+                            <span>128.43</span>
+                        </div>
+                        <div class="text">
+                            <span>当前功率 (kW)</span>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="num">
+                            <span>1000</span>
+                        </div>
+                        <div class="text">
+                            <span>总装机容量 (kW)</span>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="num">
+                            <span>852.58</span>
+                        </div>
+                        <div class="text">
+                            <span>日发电量 (kWh)</span>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="num">
+                            <span>32, 584.47</span>
+                        </div>
+                        <div class="text">
+                            <span>月发电量 (kWh)</span>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="num">
+                            <span>976, 756.59</span>
+                        </div>
+                        <div class="text">
+                            <span>累计发电量 (kWh)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="block2">
+            <div class="content">
+                <div class="state">
+                    <div class="box boxL">
+                        <div class="title">
+                            <span>电站状态</span>
+                        </div>
+                        <div class="img">
+                            <img src="../imgs/infor2.png">
+                        </div>
+                    </div>
+                    <div class="box boxR">
+                        <div class="detail">
+                            <div>电站总数：5780（个）</div>
+                            <div>正常数量：5770（个）</div>
+                            <div>离线数量：6 （个）</div>
+                            <div>报警数量：4 （个）</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contribute">
+                    <div class="box boxL">
+                        <div class="title">
+                            <span>社会贡献</span>
+                        </div>
+                        <div class="img">
+                            <img src="../imgs/timg.jpg" >
+                        </div>
+                    </div>
+                    <div class="box boxR">
+                        <div class="detail">
+                            <div>减少CO2排放：1000t</div>
+                            <div>减少SO2排放：1000t</div>
+                            <div>绿植增加量：1000棵</div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="block3">
+            <div class="list">
+                <form>
+                    <div class="title">电站列表</div>
+                    <div class="listTitle">
+                        <div class="submit"><a onClick="onSubmitVote()" id="watch">点击查看对比数据</a></div>
+                        <div class="add"><a href="addStation.html"><i class="fa fa-plus-square"></i>&nbsp;增加电站</a></div>
+                    </div>
+                    <div class="listContent">
+                        <table class="table table-bordered" id="dataTable">
+                            <tr class="title">
+                                <td>勾选对比项</td>
+                                <td>电站名称</td>
+                                <td>电站地址</td>
+                                <td>电站状态</td>
+                                <td>装机容量(kW)</td>
+                                <td>业主信息</td>
+                                <td>发电功率(kW)</td>
+                                <td>当日发电量(kW)</td>
+                                <td>当日发电趋势</td>
+                                <td>更新时间</td>
+                                <td>查看电站信息</td>
+                                <td>编辑电站信息</td>
+                            </tr>
+                            <tr>
+                                <td class="lineHeight"><input name="name" type="checkbox" value="襄阳站" onClick="onCheckBox(this)"/></td>
+                                <td class="lineHeight"><span>襄阳站</span></td>
+                                <td class="lineHeight"><div class="location" title="湖北省襄阳市襄城区古隆中木叶村233号火影有限公司"><span>湖北省襄阳市襄城区古隆中木叶村233号火影有限公司</span></div></td>
+                                <td class="lineHeight"><span>在线</span></td>
+                                <td class="lineHeight"><span>666</span></td>
+                                <td class="lineHeight"><div class="userData" title="lf1234567路飞"><span>lf1234567路飞</span></div></td>
+                                <td class="lineHeight"><span>123</span></td>
+                                <td class="lineHeight"><span>456</span></td>
+                                <td class="tdRow" id="tendency1" style="width:160px;height: 100px;">
+                                    <script type="text/javascript">
+                                        var myChart=echarts.init(document.getElementById('tendency1'));
+                                        option = {
+                                            xAxis: {
+                                                type: 'category',
+                                                data: ['1',  '5', '9', '13','17','21','24'],
+                                                axisLabel:{
+                                                    interval:0,
+                                                    margin:5,
+                                                    textStyle:{
+                                                        fontSize:9,
+                                                        color:"#000000"
+                                                    }
+                                                }
+                                            },
+                                            tooltip:{
+                                                trigger: 'axis',
+                                            },
+                                            yAxis: {
+                                                axisLabel:{
+                                                    formatter: function(){
+                                                        return "";
+                                                    }
+                                                }
+                                            },
+                                            series: [{
+                                                data: [0, 16, 30, 37,65, 30, 0 ],
+                                                type: 'line',
+                                            }],
+
+                                        };
+                                        myChart.setOption(option);
+                                    </script>
+                                </td>
+                                <td class="lineHeight"><span>2018-4-18</span></td>
+                                <td class="lineHeight">
+                                    <a href="essential%20information.html">详情</a>
+                                </td>
+                                <td class="lineHeight">
+                                    <a href="edictInformation.html"><i class="fa fa-edit"></i></a>
+                                    <i class="fa fa-trash-o" id="xiangyang" onclick="dele(this.id)"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="lineHeight"><input name="name" type="checkbox" value="苏州站" onClick="onCheckBox(this)"/></td>
+                                <td class="lineHeight"><span>苏州站</span></td>
+                                <td class="lineHeight"><div class="location" title="湖北省襄阳市襄城区古隆中木叶村233号火影有限公司"><span>湖北省襄阳市襄城区古隆中木叶村233号火影有限公司</span></div></td>
+                                <td class="lineHeight"><span>在线</span></td>
+                                <td class="lineHeight"><span>666</span></td>
+                                <td class="lineHeight"><div class="userData" title="lf1234567路飞"><span>lf1234567路飞</span></div></td>
+                                <td class="lineHeight"><span>123</span></td>
+                                <td class="lineHeight"><span>456</span></td>
+                                <td class="tdRow" id="tendency2"style="width:160px;height: 100px;">
+                                    <script type="text/javascript">
+                                        var myChart=echarts.init(document.getElementById('tendency2'));
+                                        option = {
+                                            xAxis: {
+                                                type: 'category',
+                                                data: ['1', '5', '9', '13', '17', '21', '24'],
+                                                axisLabel: {
+                                                    textStyle: {
+                                                        fontSize: 9,
+                                                        color: "#000000"
+                                                    }
+                                                }
+                                            },
+                                            tooltip:{
+                                                trigger: 'axis',
+                                            },
+                                            yAxis: {
+                                                axisLabel:{
+                                                    formatter: function(){
+                                                        return "";
+                                                    }
+                                                }
+                                            },
+                                            series: [{
+                                                data: [0, 16, 30, 37,65, 30, 0 ],
+                                                type: 'line'
+                                            }]
+                                        };
+                                        myChart.setOption(option);
+                                    </script>
+                                </td>
+                                <td class="lineHeight"><span>2018-4-18</span></td>
+                                <td class="lineHeight">
+                                    <a href="essential%20information.html">详情</a>
+                                </td>
+                                <td class="lineHeight">
+                                    <a href="edictInformation.html"><i class="fa fa-edit"></i></a>
+                                    <i class="fa fa-trash-o" id="suzhou" onclick="dele(this.id)"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="lineHeight"><input name="name" type="checkbox" value="上海站" onClick="onCheckBox(this)"/></td>
+                                <td class="lineHeight"><span>上海站</span></td>
+                                <td class="lineHeight"><div class="location" title="湖北省襄阳市襄城区古隆中木叶村233号火影有限公司"><span>湖北省襄阳市襄城区古隆中木叶村233号火影有限公司</span></div></td>
+                                <td class="lineHeight"><span>在线</span></td>
+                                <td class="lineHeight"><span>666</span></td>
+                                <td class="lineHeight"><div class="userData" title="lf1234567路飞"><span>lf1234567路飞</span></div></td>
+                                <td class="lineHeight"><span>123</span></td>
+                                <td class="lineHeight"><span>456</span></td>
+                                <td class="tdRow" id="tendency3"style="width:160px;height: 100px;">
+                                    <script type="text/javascript">
+                                        var myChart=echarts.init(document.getElementById('tendency3'));
+                                        option = {
+                                            xAxis: {
+                                                type: 'category',
+                                                data: ['1', '5', '9', '13', '17', '21', '24'],
+                                                axisLabel: {
+                                                    interval: 0,
+                                                    margin: 5,
+                                                    textStyle: {
+                                                        fontSize: 9,
+                                                        color: "#000000"
+                                                    }
+                                                }
+                                            },
+                                            tooltip:{
+                                                trigger: 'axis',
+                                            },
+                                            yAxis: {
+                                                axisLabel:{
+                                                    formatter: function(){
+                                                        return "";
+                                                    }
+                                                }
+                                            },
+                                            series: [{
+                                                data: [0, 16, 30, 37,65, 30, 0 ],
+                                                type: 'line'
+                                            }]
+                                        };
+                                        myChart.setOption(option);
+                                    </script>
+                                </td>
+                                <td class="lineHeight"><span>2018-4-18</span></td>
+                                <td class="lineHeight">
+                                    <a href="essential%20information.html">详情</a>
+                                </td>
+                                <td class="lineHeight">
+                                    <a href="edictInformation.html"><i class="fa fa-edit"></i></a>
+                                    <i class="fa fa-trash-o" id="shnaghai" onclick="dele(this.id)"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="lineHeight"><input name="name" type="checkbox" value="武汉站" onClick="onCheckBox(this)"/></td>
+                                <td class="lineHeight"><span>武汉站</span></td>
+                                <td class="lineHeight"><div class="location" title="湖北省襄阳市襄城区古隆中木叶村233号火影有限公司"><span>湖北省襄阳市襄城区古隆中木叶村233号火影有限公司</span></div></td>
+                                <td class="lineHeight"><span>在线</span></td>
+                                <td class="lineHeight"><span>666</span></td>
+                                <td class="lineHeight"><div class="userData" title="lf1234567路飞">lf1234567路飞</div></td>
+                                <td class="lineHeight"><span>123</span></td>
+                                <td class="lineHeight"><span>456</span></td>
+                                <td class="tdRow" id="tendency5"style="width:160px;height: 100px;">
+                                    <script type="text/javascript">
+                                        var myChart=echarts.init(document.getElementById('tendency5'));
+                                        option = {
+                                            xAxis: {
+                                                type: 'category',
+                                                data: ['1', '5', '9', '13', '17', '21', '24'],
+                                                axisLabel: {
+                                                    interval: 0,
+                                                    margin: 5,
+                                                    textStyle: {
+                                                        fontSize: 9,
+                                                        color: "#000000"
+                                                    }
+                                                }
+                                            },
+                                            tooltip:{
+                                                trigger: 'axis',
+                                            },
+                                            yAxis: {
+                                                axisLabel:{
+                                                    formatter: function(){
+                                                        return "";
+                                                    }
+                                                }
+                                            },
+                                            series: [{
+                                                data: [0, 16, 30, 37,65, 30, 0 ],
+                                                type: 'line'
+                                            }]
+                                        };
+                                        myChart.setOption(option);
+                                    </script>
+                                </td>
+                                <td class="lineHeight">2018-4-18</td>
+                                <td class="lineHeight">
+                                    <a href="essential%20information.html">详情</a>
+                                </td>
+                                <td class="lineHeight">
+                                    <a href="edictInformation.html"><i class="fa fa-edit"></i></a>
+                                    <i class="fa fa-trash-o" id="wuhan" onclick="dele(this.id)"></i>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+
+    function dele(id) {
+        var judge=confirm("确认删除该电站？")
+        if(judge==true){
+            //调用接口
+            finish(id);
+        }
+    }
+
+    //模拟接口
+    function finish(id) {
+        alert("删除成功"+id);
+    }
+</script>
+</body>
+</html>

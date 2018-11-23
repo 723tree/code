@@ -1,0 +1,342 @@
+.main{
+    width: 100%;
+    height: 91%;
+}
+.center{
+    width: 96%;
+    margin-left: 2%;
+    height: 95%;
+    margin-top: 1%;
+    display: flex;
+    flex-direction: row;
+}
+.left{
+    width: 29%;
+    height: 100%;
+    margin-right: 1%;
+}
+.right{
+    width: 70%;
+    height: 100%;
+}
+.rblock1{
+    width: 100%;
+    height: 100%;
+}
+.left .topTitle{
+    width: 100%;
+    height: 7%;
+    background-color: #DBB364;
+    color: black;
+    font-size: 15px;
+}
+.left .topTitle span{
+    display: inline-block;
+    margin-top: 2%;
+    margin-left: 2%;
+}
+.left .content{
+    width: 100%;
+    height:93%;
+    background-color: rgba(255,255,255,0.3);
+}
+.left .content .img{
+    width: 80%;
+    height: 35%;
+    margin-left: 10%;
+}
+.left .content .img img{
+    width: 100%;
+    height: 86%;
+    margin-top: 8%;
+}
+.left .content .detail{
+    width: 80%;
+    height: 30%;
+    margin-left: 10%;
+    margin-top: 5%;
+    color: black;
+}
+.left .content .detail .box{
+    width: 100%;
+    height: 16.6%;
+    display: flex;
+    flex-direction: row;
+}
+.left .content .detail .box a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    color: black;
+}
+.left .content .detail .box a:hover{
+    text-decoration: none;
+}
+.left .content .detail .box .boxHead{
+    display: inline-block;
+    width: 35%;
+    height: 100%;
+}
+.left .content .detail .box .boxBody{
+    display: inline-block;
+    width: 65%;
+    height: 100%;
+    text-align: right;
+}
+.left .fa-angle-right{
+    font-size: 20px;
+    margin-right: 1%;
+}
+.left .content .weather{
+    width: 100%;
+    height: 27%;
+    margin-top: 5%;
+}
+.left .content .weather .weaTitle{
+    width: 100%;
+    height: 25%;
+    background-color: rgba(255,255,255,0.3);
+    display: flex;
+    flex-direction: row;
+}
+.left .content .weather .weaTitle .icon{
+    display: inline-block;
+    width: 10%;
+    height: 100%;
+    text-align: center;
+    padding-top: 1%;
+}
+.left .content .weather .weaTitle  button{
+    border: none;
+    background-color:rgba(255,255,255,0) !important;
+    display: inline-block;
+    width: 10%;
+    height: 100%;
+    text-align: center;
+    padding-top: 1%;
+}
+.weaTitle button i:hover{
+    transform: rotate(180deg);
+    transition: 1s;
+}
+.fa-refresh{
+    color: #333333;
+}
+.left .content .weather .weaTitle .text{
+    display: inline-block;
+    width: 90%;
+    height: 100%;
+    text-align: center;
+    color: black;
+}
+.left .content .weather .weaTitle .text span{
+    display: inline-block;
+    margin-top: 3%;
+    margin-right: 10%;
+}
+.left .content .weather .place{
+    width: 100%;
+    height: 20%;
+    margin-top: 2%;
+    text-align: right;
+}
+.left .content .weather .place .placeData{
+    color: black;
+    margin-left: 5px;
+    margin-right: 10%;
+    font-size: 11px;
+}
+.left .content .weather .weaData{
+    width: 100%;
+    height: 50%;
+    text-align: center;
+}
+.left .content .weather .weaData .fa-cloud{
+    font-size: 40px;
+    color: #5e5e5e;
+    margin-top: 1%;
+}
+.left .content .weather .weaData .data{
+    font-size: 11px;
+    color: black;
+    position: relative;
+    top: -5%;
+    left: 1%;
+}
+.left .content .weather .fa-map-marker{
+    color: #333333;
+}
+.right .topTitle{
+    width: 100%;
+    height: 7%;
+    background-color: #DBB364;
+    color: black;
+    font-size: 15px;
+}
+.right .topTitle span{
+    display: inline-block;
+    margin-top: 1%;
+    margin-left: 1%;
+}
+
+ .right .content{
+     width: 100%;
+     height:93%;
+     background-color: rgba(255,255,255,0.3);
+ }
+.right .content .box1{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+}
+.right .content .box1 .icon{
+    width: 13%;
+    height: 100%;
+    text-align: center;
+}
+.right .content .box1 .icon .fa-sun-o{
+    font-size: 35px;
+    color: #FF9801;
+    margin-top: 25%;
+}
+.right .content .box1 .aTable{
+    width: 92%;
+    height: 100%;
+    margin-top: 2%;
+}
+.right .content .box1 .aTable table{
+    width: 100%;
+    color: black;
+}
+.right .content .box1 .aTable table tr{
+    margin-top: 5px;
+}
+.right .content .box2{
+    width: 100%;
+    height: 80%;
+}
+
+.right .content .box2 .block{
+    width: 96%;
+    margin-left:2%;
+    height:100%;
+}
+.right .content .box2 .tabul{
+    width: 20%;
+    height: 100%;
+    background-color: rgba(255,255,255,0) !important;
+    margin-left: 80%;
+}
+.box2 .block .tabul  li{
+    list-style: none;
+    float: left;
+    width: 33.3%;
+    height: 100%;
+    font-size: 15px;
+    color: black;
+    text-align: center;
+    border: 1px solid black;
+    background-color: white;
+}
+.box2 .block .tabul  li span{
+    display: inline-block;
+    width: 33%;
+    height: 100%;
+}
+.box2 .block .tabul  li:hover{
+    background-color: white;
+}
+.box2 .block .tabul  .active{
+    color: orange;
+}
+.box2  .block .tabul li span{
+    display: inline-block;
+    margin-top: 12%;
+}
+.box2 .block .con{
+    width: 100%;
+    height: 92%;
+}
+.box2 .block .blockHead{
+    display: flex;
+    flex-direction: row;
+    height: 8%;
+}
+
+.box2 .con input{
+    width: 10%;
+    height: 8%;
+    color: black;
+}
+
+@media screen and (max-width:2000px){
+    .box2 .chart{
+        width: 100%;
+        height: 46%;
+    }
+    .box2 .chart2{
+        width: 1173%;
+        height: 210%;
+        position:relative ;
+    }
+    .box2 .chart3{
+        width: 1173%;
+        height: 215%;
+        position:relative ;
+        top: -165%;
+    }
+}
+@media screen and (max-width:1800px){
+    .box2 .chart{
+        width: 100%;
+        height: 46%;
+    }
+    .box2 .chart2{
+        width: 1100%;
+        height: 200%;
+        position:relative ;
+    }
+    .box2 .chart3{
+        width: 1100%;
+        height: 200%;
+        position:relative ;
+        top: -152%;
+    }
+}
+@media screen and (max-width:1600px){
+    .box2 .chart{
+        width: 100%;
+        height: 46%;
+    }
+    .box2 .chart2{
+        width: 978%;
+        height: 190%;
+        position:relative ;
+    }
+    .box2 .chart3{
+        width: 978%;
+        height: 190%;
+        position:relative ;
+        top: -145%;
+    }
+}
+@media screen and (max-width:1366px){
+    .box2 .chart{
+        width: 100%;
+        height: 48%;
+    }
+    .box2 .chart2{
+        width: 879%;
+        height: 175%;
+        position:relative ;
+    }
+    .box2 .chart3{
+        width: 879%;
+        height: 175%;
+        position:relative ;
+        top: -128%;
+    }
+}

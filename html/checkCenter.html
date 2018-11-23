@@ -1,0 +1,191 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+    <title>运维中心报警列表</title>
+    <link href="../css/checkCenter.css" rel="stylesheet">
+    <link href="../css/alarm.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/stationRunTablePage.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://cache.amap.com/lbs/static/main1119.css"/>
+    <link href="../css/font-awesome.css" rel="stylesheet" />
+    <link href="../iconfont/iconfont.css" rel="stylesheet" />
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_658328_09pj05ff18wr8uxr.css">
+    <script src="../iconfont/iconfont.js"></script>
+    <script src="http://cache.amap.com/lbs/static/es5.min.js"></script>
+    <script src="http://webapi.amap.com/maps?v=1.4.5&key=您申请的key值"></script>
+    <script type="text/javascript" src="http://cache.amap.com/lbs/static/addToolbar.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/time.js"></script>
+    <script src="../js/alarmAjax.js"></script>
+    <script src="../js/alarmData.js"></script>
+    <script src="../js/stationRunTablePage.js"></script>
+
+</head>
+<body>
+<div id="container">
+</div>
+<div class="top col-md-12">
+    <div class="top-left">
+        <div class="kong"></div>
+        <div class="logo">
+            <img src="../imgs/logo3.png">
+        </div>
+    </div>
+    <div class="top-right">
+        <ul class="list">
+            <li><a href="informationCenter.html">电站中心</a></li>
+            <li><a href="checkCenter.html">运维中心</a></li>
+            <li><a href="reportCenter.html">报表中心</a></li>
+            <li><a href="centralizedControl.html">展示中心</a></li>
+            <li><a href="associate.html">账号管理</a></li>
+            <li><a href="login.html" ><span class="fa fa-user"></span></a></li>
+        </ul>
+    </div>
+</div>
+<div class="main col-md-12">
+    <div class="box1 col-md-2">
+        <div class="block">
+            <div class="bj">
+                <a href="#" onclick="alarmTable()"><span>报警中心<img src="../imgs/red.png"></span></a>
+            </div>
+            <div class="gd">
+                <a href="#"><span>工单中心<img src="../imgs/green.png"></span></a>
+            </div>
+        </div>
+    </div>
+    <div id="myTable" class="kong col-md-8" style="opacity:0">
+        <div class="side" >
+            <div class="box">
+                <span>报警列表</span>
+            </div>
+        </div>
+        <div class="center" >
+            <table class="table table-bordered" id="dataTable">
+                <!--<tr class="title">-->
+                    <!--<td><span>电站名称</span></td>-->
+                    <!--<td><span>报警内容</span></td>-->
+                    <!--<td><span>报警时间</span></td>-->
+                <!--</tr>-->
+                <!--<tr class="text">-->
+                    <!--<td><span>电站1</span></td>-->
+                    <!--<td></td>-->
+                    <!--<td></td>-->
+                <!--</tr>-->
+                <!--<tr class="text">-->
+                    <!--<td><span>电站2</span></td>-->
+                    <!--<td></td>-->
+                    <!--<td></td>-->
+                <!--</tr>-->
+                <!--<tr class="text">-->
+                    <!--<td><span>电站3</span></td>-->
+                    <!--<td></td>-->
+                    <!--<td></td>-->
+                <!--</tr>-->
+            </table>
+            <div id="ui-page" class="ui-page">
+
+            </div>
+        </div>
+        <div id="close" class="close" style="margin-left: 8%;margin-top: 1%" onclick="closeTable()">
+            <img src="../imgs/close.png">
+        </div>
+    </div>
+    <div class="box2 col-md-2">
+        <div class="block">
+            <div class="blockTop"></div>
+            <div class="colors">
+                <div class="color color1">
+                    <span><img src="../imgs/green.png">电站正常</span>
+                </div>
+                <div class="color color2">
+                    <span><img src="../imgs/red.png">电站异常</span>
+                </div>
+                <div class="color">
+                    <span><img src="../imgs/black.png">电站离线</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    initTotalPageNum=5
+    if(initTotalPageNum!=0){
+        $("#ui-page").paging({pageSize:3,totalPage:initTotalPageNum});
+        document.getElementsByClassName('page')[0].click();
+    }
+
+    var map = new AMap.Map('container', {
+        center: [100.397428, 35.90923],
+        layers: [new AMap.TileLayer.Satellite()],
+        zoom: 4
+    });
+    map.clearMap();  // 清除地图覆盖物
+
+    data2=[
+        {"location":[116.2329,39.5420],"cityname":"北京","state":"正常"},
+        {"location":[112.05,32.04],"cityname":"襄阳","state":"离线"},
+        {"location":[121.281321,31.13495],"cityname":"上海","state":"异常"},
+    ]
+
+    //    alert(data.length);
+    for (var i=0;i<data2.length;i++){
+        if(data2[i].state=="正常"){
+            var id = 'marker'+i;
+            id = new AMap.Marker({
+                icon:'../imgs/green.png',
+                position:data2[i].location
+            });
+            id.setMap(map);
+            id.setTitle(data2[i].cityname);
+            id.setLabel({
+                offset: new AMap.Pixel(20, 20),
+                content: data2[i].cityname
+            });
+        }
+        if(data2[i].state=="离线"){
+            var id = 'marker'+i;
+            id = new AMap.Marker({
+                icon:'../imgs/black.png',
+                position:data2[i].location
+            });
+            id.setMap(map);
+            id.setTitle(data2[i].cityname);
+            id.setLabel({
+                offset: new AMap.Pixel(20, 20),
+                content: data2[i].cityname
+            });
+        }
+        if(data2[i].state=="异常"){
+            var id = 'marker'+i;
+            id = new AMap.Marker({
+                icon:'../imgs/red.png',
+                position:data2[i].place
+            });
+            id.setMap(map);
+            id.setTitle(data2[i].cityname);
+            id.setLabel({
+                offset: new AMap.Pixel(20, 20),
+                content: data2[i].cityname
+            });
+        }
+
+//        alert(data[i].place+ data[i].cityname)
+    }
+</script>
+<script>
+    var panduan=document.getElementById('myTable').style.opacity;
+    function alarmTable() {
+        if (panduan==0){
+            document.getElementById('myTable').style.opacity=100;
+        }
+    }
+    function closeTable() {
+        document.getElementById('myTable').style.opacity=0;
+    }
+</script>
+</body>
+</html>

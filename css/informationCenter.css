@@ -1,0 +1,340 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    background:url("../imgs/login.png");
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+}
+.top{
+    width: 100%;
+    height: 9%;
+    background-color: white;
+    color: white;
+    display: flex;
+    flex-direction: row;
+}
+.top-left{
+    width:40%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.top-left .kong{
+    width: 37%;
+}
+.logo{
+    width: 30%;
+    height: 80%;
+    margin-top: 2.5%;
+}
+.logo img{
+    width: 90%;
+}
+.top-right{
+    width: 60%;
+    height: 100%;
+}
+.list{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 0 !important;
+}
+.list li {
+    width: 14.3%;
+}
+li a{
+    color: black;
+    display: inline-block;
+    margin-top: 15%;
+}
+.main{
+    width: 100%;
+    height: 91%;
+}
+.center{
+    width: 92%;
+    height: 100%;
+    margin-left: 4%;
+}
+.block1{
+    width: 100%;
+    height: 25%;
+}
+.block1 .content{
+    width: 96%;
+    height: 100%;
+    margin-left: 2%;
+}
+.block1 .content .title{
+    width: 100%;
+    height: 35%;
+    border-bottom: 2px solid #333333;
+    text-align: center;
+    color: white;
+    font-size: 17px;
+}
+.block1 .content .title span{
+    display: inline-block;
+    margin-top: 2%;
+}
+.block1 .content .detail{
+    width: 100%;
+    height: 65%;
+    display: flex;
+    flex-direction: row;
+    margin-left: 1.5%;
+}
+.block1 .content .detail .box{
+    width: 17%;
+    height: 95%;
+    margin-top: 0.5%;
+    margin-right: 3%;
+    background-color: rgba(219,179,100,0.3);
+}
+.block1 .content .detail .box .num{
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    color:#FF9800 ;
+    font-size: 24px;
+}
+.block1 .content .detail .box .num span{
+    display: inline-block;
+    margin-top: 10%;
+}
+.block1 .content .detail .box .text{
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    color:white;
+    font-size: 11px;
+}
+.block1 .content .detail .box .text span{
+    display: inline-block;
+    margin-top: 2%;
+}
+
+.block2{
+    width: 100%;
+    height: 30%;
+}
+.block2 .content{
+    width: 80%;
+    height: 100%;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: row;
+}
+.state{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.contribute{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.block2 .box{
+    width: 50%;
+    height: 100%;
+}
+.block2 .boxL .title{
+    width: 100%;
+    height: 27%;
+    font-size: 17px;
+    color: white;
+    border-bottom: 2px solid #333333;
+    margin-bottom: 3%;
+    text-align: center;
+}
+.block2 .boxL .title span{
+    display: inline-block;
+    margin-top: 7%;
+}
+.block2 .boxL .img{
+    width: 100%;
+    height: 70%;
+    text-align: center;
+    background-color: rgba(219,179,100,0.5);
+}
+.block2 .boxL .img img{
+    width: 100%;
+}
+.block2 .boxR  .detail{
+    width: 100%;
+    height: 62%;
+    margin-top: 19%;
+    font-size: 15px;
+    color: #222222;
+    font-weight: bold;
+}
+.block2 .boxR  .detail div{
+    width: 100%;
+    height: 25%;
+    margin-bottom: 1%;
+    margin-left: 5%;
+}
+.contribute{
+    position: relative;
+    left: 8%;
+}
+.block3{
+    width: 100%;
+    height: 47%;
+}
+.block3 .list{
+    width: 100%;
+    height: 70%;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+}
+
+.list .listTitle{
+    width: 100%;
+    /*height: 15%;*/
+    border-bottom: 2px solid #DBB364;
+    display: flex;
+    flex-direction: row;
+}
+
+.list .listContent{
+    width: 100%;
+    height: 80%;
+    margin-top: 1%;
+}
+table{
+    width: 100%;
+    height: 100%;
+    background-color: white !important;
+    color: #222222;
+}
+table td{
+    border: 1px solid orange !important;
+}
+.table .title{
+    background-color:#DBB364 !important; ;
+}
+.table .orange{
+    background-color: rgba(219,179,100,0.5);
+}
+
+.block3 .information{
+    width: 30%;
+    height: 70%;
+    margin-left: 3%;
+    margin-top: 2%;
+}
+.inforTitle{
+    width: 100%;
+    height: 25%;
+    border-bottom: 10px solid #DBB364 ;
+    color: #222222;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+.inforTitle span{
+    display: inline-block;
+    margin-top: 1%;
+}
+.inforText{
+    width: 100%;
+    height: 71%;
+    margin-top: 2%;
+    background-color: rgba(255,255,255,0.7);
+}
+.inforText .box{
+    width: 100%;
+    height: 25%;
+    color: #222222;
+    font-size: 12px;
+    font-weight: bold;
+}
+.inforText .box span{
+    display: inline-block;
+    margin-top: 2%;
+    margin-left: 5%;
+}
+.location{
+    width: 85px;
+    white-space: nowrap;
+    overflow: hidden ;
+    text-overflow: ellipsis ;
+}
+.userData{
+    width: 60px;
+    white-space: nowrap;
+    overflow: hidden ;
+    text-overflow: ellipsis ;
+}
+.listContent td a{
+    color: black;
+}
+ input[type=checkbox] {
+     width: 25% !important;
+     height: 25% !important;
+ }
+td{
+    text-align: center;
+}
+.fa-edit .fa-trash-o{
+    font-size: 20px;
+}
+.fa-trash-o{
+    display: inline-block;
+    margin-left: 10px;
+}
+ .title{
+    width: 100%;
+    height: 5%;
+    font-size: 17px;
+    color: white;
+    text-align: center;
+     margin-top: 1%;
+}
+.listTitle .add {
+    margin-left: 1%;
+    margin-bottom: 0.5%;
+    text-align: center;
+}
+.listTitle .add a{
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    background-color: rgba(255,255,255,0.4);
+    color: black;
+    border-radius: 10px;
+}
+.listTitle .submit{
+    margin-left: 1%;
+    margin-bottom: 0.5%;
+    text-align: center;
+}
+.listTitle  .submit a{
+    display: inline-block;
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+    background-color: rgba(255,255,255,0.4);
+    color: black;
+    border-radius: 10px;
+}
+.fa-plus-square{
+    font-size: 18px;
+    /*margin-right: 1%;*/
+}
+@-moz-document url-prefix() {
+
+ }

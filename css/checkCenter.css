@@ -1,0 +1,152 @@
+
+html,body {
+    /*overflow: hidden;*/
+    width: 100%;
+    height: 100%;
+    -webkit-font-smoothing: antialiased;
+}
+.top{
+    width: 100%;
+    height: 9%;
+    background-color: white;
+    color: white;
+    display: flex;
+    flex-direction: row;
+}
+.top-left{
+    width:40%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.top-left .kong{
+    width: 37%;
+}
+.logo{
+    width: 30%;
+    height: 80%;
+    margin-top: 2.5%;
+}
+.logo img{
+    width: 90%;
+}
+.top-right{
+    width: 60%;
+    height: 100%;
+}
+.list{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 0 !important;
+}
+.list li {
+    width: 14.3%;
+}
+li a{
+    color: black;
+    display: inline-block;
+    margin-top: 15%;
+}
+.amap-marker-label{
+    border: none;
+    background-color: rgba(255,255,255,0);
+    color: white;
+}
+.main{
+    width: 100%;
+    height: 91%;
+}
+.box1{
+    height:100%;
+}
+.box1 .block{
+    width: 70%;
+    height: 20%;
+    margin-top: 90%;
+    margin-left: -15%;
+}
+.box1 .block .bj{
+    width: 100%;
+    height: 30%;
+    margin-bottom: 20%;
+    background-color: rgba(255,255,255,0.6);
+    text-align: center;
+    border-bottom-right-radius:7px ;
+    border-top-right-radius:7px ;
+}
+.bj span{
+    display: inline-block;
+    margin-top: 5%;
+}
+.box1 .block .gd{
+    width: 100%;
+    height: 30%;
+    margin-top: 20%;
+    background-color: rgba(255,255,255,0.8);
+    text-align: center;
+    border-bottom-right-radius:7px ;
+    border-top-right-radius:7px ;
+}
+.gd span{
+    display: inline-block;
+    margin-top: 5%;
+}
+.box1 .block img{
+    width: 15%;
+    margin-left: 2%;
+}
+
+.box2{
+    height:100%;
+}
+.block a{
+    color: #222222;
+}
+.box2  .block{
+    width: 80%;
+    height: 23%;
+    position: absolute;
+    bottom: 3%;
+    right: 2%;
+}
+.blockTop{
+    width: 100%;
+    height: 10%;
+    background-color: #DBB364;
+    margin-bottom: 3%;
+}
+.colors{
+    width: 100%;
+    height: 87%;
+    background-color: rgba(255,255,255,0.6);
+}
+.color{
+    width: 100%;
+    height: 33%;
+    text-align: center;
+}
+.color1,.color2{
+    /*border-bottom: 1px solid white;*/
+}
+.color img{
+    width: 17%;
+    margin-right: 10%;
+    margin-top: -5%;
+}
+.color span{
+    display: inline-block;
+    margin-top: 8%;
+}
+.amap-logo {
+    right: -1000px !important;
+    left: auto !important;
+    display: none;
+}
+
+.amap-copyright {
+    right: -1000px !important;
+    left: auto !important;
+}
+

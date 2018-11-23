@@ -1,0 +1,43 @@
+
+body{
+    /*overflow: hidden;*/
+    background:url("../imgs/login.png");
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    /*color: white;*/
+    -webkit-font-smoothing: antialiased;
+}
+.require{
+    color:red;
+    font-size: 16px;
+    margin-right: 5px;
+    position: relative;
+    top: 2px;
+}
+.panel{
+    background-color:rgba(255,255,255,0.3);
+    box-shadow: 3px 0 8px -3px rgba(0, 0, 0, 0.5);
+    margin-top: 20%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.panel-heading{
+    background-color:rgba(255,255,255,0) !important;
+    border: none;
+}
+ .addBtn{
+     width: 46%;
+     margin-left: 27%;
+     height: 40px;
+     border: none;
+     border-radius: 5px;
+ }
+.btn-primary{
+    background-color:#2E6DA4;
+    margin-left: 40%;
+    width: 20%;
+}
+
+

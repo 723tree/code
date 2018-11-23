@@ -1,0 +1,351 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+    <title>单体电站展示</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://cache.amap.com/lbs/static/main1119.css"/>
+    <link rel="stylesheet" href="../css/show2.css"/>
+    <link href="../css/font-awesome.css" rel="stylesheet" />
+    <link href="../iconfont/iconfont.css" rel="stylesheet" />
+    <script src="../iconfont/iconfont.js"></script>
+    <script src="http://cache.amap.com/lbs/static/es5.min.js"></script>
+    <script src="http://webapi.amap.com/maps?v=1.4.5&key=您申请的key值"></script>
+    <script type="text/javascript" src="http://cache.amap.com/lbs/static/addToolbar.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/time.js"></script>
+    <script src="../js/echarts.js"></script>
+</head>
+<body>
+<div id="container">
+</div>
+<div class="top col-md-12">
+    <div class="top-left col-md-4">
+        <div class="logo">
+            <img src="../imgs/logo1.png">
+        </div>
+    </div>
+    <div class="top-center col-md-4 ">
+        <div class="time">
+            <span>时间：</span><span id="clock"></span>
+        </div>
+    </div>
+    <div class="top-right col-md-4 ">
+        <div class="search">
+            <form>
+                <!--<input type="text" class="form-control"  placeholder="搜索">-->
+                <!--<button class="btn btn-primary"><i class="fa fa-search" ></i></button>-->
+                <a href="informationCenter.html" title="返回主页" class="bhome"><span class="fa fa-home" style="font-size: 30px !important;"></span></a>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="main col-md-12">
+    <div class="center">
+        <div class="cenLeft">
+            <div class="information">
+                <div class="infoTop">
+                    <span>Power station Information</span>
+                </div>
+                <div class="infoContent">
+                    <div class="infoTitle">
+                        <span>电站信息</span>
+                    </div>
+                    <div class="infoImg">
+                        <img src="../imgs/information.png">
+                    </div>
+                    <div class="infoDetail">
+                        <div class="detailBox">
+                            <div> 电站地址：湖北省襄阳市襄城区绿荫大道160号</div>
+                            <div> 装机容量：66kWh</div>
+                            <div>开网类型：分布式自发自用余电上网</div>
+                            <div>电站类型：工商业屋顶</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cenRight">
+            <div class="sun">
+                <div class="kong"></div>
+                <div class="sunContent">
+                    <div class="weaIcon">
+                        <div class="img">
+                            <img src="../imgs/weather.png">
+                        </div>
+                    </div>
+                    <div class="weather">
+                        <div class="weaContent">
+                            <div class="place"><span class="fa fa-map-marker"></span>&nbsp;<span class="location">襄阳</span></div>
+                            <div class="weaData">15℃多云</div>
+                        </div>
+                    </div>
+                    <div class="upDown">
+                        <div class="udContent">
+                            <div class="up">
+                                日出时间：<span class="upTime">06:00</span>
+                            </div>
+                            <div class="down">
+                                日落时间：<span class="downTime">19:00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mainData">
+                <div class="box1">
+                    <div class="boxTop">
+                        <span>社会贡献</span>
+                    </div>
+                    <div class="boxData">
+                        <div class="block">
+                            <div class="blockTitle">
+                                <span>减少CO2排放</span>
+                            </div>
+                            <div class="blockData">
+                                <span>1000t</span>
+                            </div>
+                        </div>
+                        <div class="block">
+                            <div class="blockTitle">
+                                <span>减少SO2排放</span>
+                            </div>
+                            <div class="blockData">
+                                <span>1000t</span>
+                            </div>
+                        </div>
+                        <div class="block">
+                            <div class="blockTitle">
+                                <span>绿植增加量</span>
+                            </div>
+                            <div class="blockData">
+                                <span>1000棵</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box box2">
+                    <div class="boxTop">
+                        <span>发电量</span>
+                    </div>
+                    <div class="boxData">
+                        <div class="block">
+                            <div class="blockTitle">
+                                <span>今日</span>
+                            </div>
+                            <div class="blockData">
+                                <span>10KWH</span>
+                            </div>
+                        </div>
+                        <div class="block">
+                            <div class="blockTitle">
+                                <span>当月</span>
+                            </div>
+                            <div class="blockData">
+                                <span>300KWH</span>
+                            </div>
+                        </div>
+                        <div class="block">
+                            <div class="blockTitle">
+                                <span>当年</span>
+                            </div>
+                            <div class="blockData">
+                                <span>3000KWH</span>
+                            </div>
+                        </div>
+                        <div class="block">
+                            <div class="blockTitle">
+                                <span>累积</span>
+                            </div>
+                            <div class="blockData">
+                                <span>13000KWH</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box box3">
+                    <div class="boxTop">
+                        <span>收益</span>
+                    </div>
+                    <div class="boxData">
+                        <div class="block">
+                            <div class="blockTitle">
+                                <span>今日</span>
+                            </div>
+                            <div class="blockData">
+                                <span>200CNY</span>
+                            </div>
+                        </div>
+                        <div class="block">
+                            <div class="blockTitle">
+                                <span>当月</span>
+                            </div>
+                            <div class="blockData">
+                                <span>6000CNY</span>
+                            </div>
+                        </div>
+                        <div class="block">
+                            <div class="blockTitle">
+                                <span>当年</span>
+                            </div>
+                            <div class="blockData">
+                                <span>84000CNY</span>
+                            </div>
+                        </div>
+                        <div class="block">
+                            <div class="blockTitle">
+                                <span>累积</span>
+                            </div>
+                            <div class="blockData">
+                                <span>80000CNY</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="qiXiang">
+            <div class="col col1">
+                <div class="colOne">
+                    <div>风向瞬时值</div>
+                    <div>215℃</div>
+                </div>
+                <div>
+                    <div>风速瞬时值</div>
+                    <div>1.6m/s</div>
+                </div>
+            </div>
+            <div class="col col2">
+                <div class="colOne">
+                    <div>组件温度</div>
+                    <div>7.60℃</div>
+                </div>
+                <div>
+                    <div>大气温度</div>
+                    <div>7.60℃</div>
+                </div>
+            </div>
+            <div class="col col3">
+                <div class="colOne">
+                    <div>环境温度</div>
+                    <div>68.6%RH</div>
+                </div>
+                <div>
+                    <div>辐射度</div>
+                    <div>0W/㎡</div>
+                </div>
+            </div>
+        </div>
+        <div class="sum">
+            <div class="sumData">
+                <div><span>三月发电量</span></div>
+                <div><span>总计：</span></div>
+                <div><span>352kw/h</span></div>
+            </div>
+        </div>
+        <div class="charts">
+            <div class="bar" id="bar">
+                <script type="text/javascript">
+                    var myChart=echarts.init(document.getElementById('bar'));
+                    option = {
+                        xAxis: {
+                            splitLine:{show: false},//去除网格线
+                            type: 'category',
+                            data: ['1',  '2', '3', '4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31'],
+                            axisLine: {
+                                lineStyle: {
+                                    type: 'none',
+                                    color: '#fff',//左边线的颜色
+                                }
+                            },
+                        },
+                        tooltip:{
+                            trigger: 'axis',
+                        },
+                        yAxis: {
+                            splitLine:{show: false},//去除网格线
+                            type: 'value',
+                            axisLine: {
+                                lineStyle: {
+                                    type: 'solid',
+                                    color:'#fff',
+                                }
+                            },
+
+                        },
+                        series: [{
+                            data: [20, 16, 30, 37,65, 30, 20 ,21, 16, 30, 37,65, 30, 25,20, 16, 30, 37,65, 30, 20,27, 16, 30, 37,65, 30, 25,30,65,16],
+                            type: 'bar',
+                            barWidth:10,
+                            itemStyle:{
+                                normal:{
+                                    color:'#BABAB8'
+                                }
+                            },
+                            labelLine:{
+                                normal:{
+                                    show:false
+                                }
+                            }
+                        }],
+                        textStyle:{
+                            fontSize:15,
+                            color:'#fff'
+                        },
+                    };
+                    myChart.setOption(option);
+                </script>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    var map = new AMap.Map('container', {
+        center: [100.397428, 35.90923],
+        layers: [new AMap.TileLayer.Satellite()],
+        zoom: 4
+    });
+//    map.clearMap();  // 清除地图覆盖物
+//
+//    var marker1 = new AMap.Marker({
+//        position:[116.2329, 39.5420]
+//    });
+//    marker1.setMap(map);
+//    // 设置鼠标划过点标记显示的文字提示
+//    marker1.setTitle('北京');
+//
+//    // 设置label标签
+//    marker1.setLabel({//label默认蓝框白底左上角显示，样式className为：amap-marker-label
+//        offset: new AMap.Pixel(20, 20),//修改label相对于maker的位置
+//        content: "北京"
+//    });
+//
+//    var marker2 = new AMap.Marker({
+//        position:[112.05, 32.04]
+//    });
+//    marker2.setMap(map);
+//    marker2.setTitle('襄阳');
+//    marker2.setLabel({
+//        offset: new AMap.Pixel(20, 20),
+//        content: "襄阳"
+//    });
+//
+//    var marker3 = new AMap.Marker({
+//        position: [121.281321, 31.13495]
+//    });
+//    marker3.setMap(map);
+//    marker3.setTitle('上海');
+//    marker3.setLabel({
+//        offset: new AMap.Pixel(20, 20),
+//        content: "上海"
+//    });
+</script>
+</body>
+</html>

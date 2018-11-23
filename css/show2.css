@@ -1,0 +1,356 @@
+html,body {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    -webkit-font-smoothing: antialiased;
+}
+.amap-marker-label{
+    border: none;
+    background-color: rgba(255,255,255,0);
+    color: white;
+}
+.top{
+    height: 9%;
+    background-color: white;
+    color: black;
+}
+.top-left{
+    height: 100%;
+}
+.top-left .logo{
+    width:50%;
+    height: 80%;
+    margin-top: 2%;
+    margin-left: 25%;
+}
+.logo img{
+    width: 100%;
+}
+.top-center{
+    height: 100%;
+}
+.time{
+    width: 100%;
+    text-align: center;
+    font-size: 19px;
+    margin-top: 3.5%;
+}
+.top-right{
+    height: 100%;
+}
+.top-right .search{
+    margin-top: 3%;
+    width: 60%;
+    margin-left: 25%;
+}
+form input{
+    border-right: none !important;
+    border-left: 1px solid black !important;
+    border-top: 1px solid black !important;
+    border-bottom: 1px solid black !important;
+    height: 35px !important;
+}
+.btn-primary{
+    background-color: white !important;
+    border-left: none !important;
+    margin-left: -10px;
+    border-right: 1px solid black !important;
+    border-top: 1px solid black !important;
+    border-bottom: 1px solid black !important;
+    border-bottom-left-radius:0 !important;
+    border-top-left-radius:0 !important;
+    height: 35px !important;
+}
+.fa-search{
+    color: black;
+}
+.top-right .search form{
+    display: flex;
+    flex-direction: row;
+}
+form .bhome{
+    display: inline-block;
+    color: black;
+    margin-left: 10%;
+    margin-top: 2%;
+    font-size: 19px;
+}
+
+.main{
+    width: 100%;
+    height: 90%;
+    margin-top: 1%;
+}
+.main .center{
+    width: 100%;
+    height: 67%;
+    margin-bottom: 3%;
+    display: flex;
+    flex-direction: row;
+}
+.cenLeft{
+    width: 30%;
+    height: 100%;
+    color: white;
+}
+.cenLeft .information{
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+ .infoTop{
+    width: 100%;
+    height: 8%;
+     background-color: rgba(218,179,100,0.9);
+     font-size: 16px;
+}
+ .infoTop span{
+     display: block;
+     padding-top: 1%;
+     padding-left: 4%;
+ }
+ .infoContent{
+     width: 100%;
+     height: 92%;
+     background-color: rgba(112,103,94,0.5);
+ }
+.infoTitle{
+    width: 100%;
+    height: 18%;
+}
+.infoTitle span{
+    display: block;
+    padding-top: 5%;
+    padding-left: 4%;
+    font-size:16px;
+}
+.infoImg{
+    width: 100%;
+    height: 46%;
+}
+.infoImg img{
+    width: 70%;
+    display: block;
+    padding-left: 1%;
+}
+.infoDetail{
+    width: 70%;
+    height: 30%;
+    background-color:rgba(95,93,94,0.6) ;
+    border-radius: 7px;
+    margin-left: 1%;
+    margin-top: 2%;
+    font-size: 13px;
+}
+.detailBox{
+    padding-top: 1%;
+    padding-left: 1%;
+}
+.detailBox div{
+    padding-bottom: 2%;
+}
+
+.cenRight{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction:column;
+}
+.cenRight .sun{
+    width: 100%;
+    height: 23%;
+    display: flex;
+    flex-direction: row;
+    font-size: 15px;
+    color: white;
+}
+.kong{
+    width: 65%;
+    height: 100%;
+}
+.sunContent{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.sun .weaIcon{
+    width: 25%;
+    height: 100%;
+}
+
+
+.weaIcon img{
+    width: 75%;
+}
+.sun .weather{
+    width: 28%;
+    height: 100%;
+}
+.weather .weaContent{
+    margin-top: 4%;
+    margin-left: 7%;
+}
+.weaContent .weaData{
+    margin-top: 5%;
+}
+.sun .upDown{
+    width: 47%;
+    height: 100%;
+    /*border: 1px solid white ;*/
+}
+.upDown .udContent{
+    margin-top: 2.5%;
+    margin-left: 8%;
+}
+.udContent .down{
+    margin-top: 3.5%;
+}
+
+.cenRight .mainData{
+    width: 100%;
+    height: 77%;
+    display: flex;
+    flex-direction: row;
+}
+.box1{
+    margin-left: 15%;
+    margin-right: 8%;
+    width: 18%;
+    height: 78%;
+}
+.box2{
+    width: 18%;
+    height: 100%;
+    margin-right: 8%;
+}
+.box3{
+    width: 18%;
+    height: 100%;
+    margin-right: 15%;
+}
+.boxTop{
+    color: white;
+    background-color: rgba(218,179,100,0.9);
+    width: 100%;
+    height: 9%;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 3%;
+}
+.box span{
+    display: block;
+    padding-top: 1%;
+}
+.box .boxData{
+    width: 100%;
+    height: 86%;
+    background-color:rgba(95,93,94,0.6) ;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    border-radius: 7px;
+}
+.box .boxData .block{
+    width: 94%;
+    height: 25%;
+    margin-left: 3%;
+    border: 1px solid white;
+    color: white;
+}
+.box1 .boxData{
+    width: 100%;
+    height: 86%;
+    background-color:rgba(95,93,94,0.6) ;
+    padding-top: 4%;
+    padding-bottom: 3%;
+    border-radius: 7px;
+}
+.box1 .boxData .block{
+    width: 94%;
+    height: 33%;
+    margin-left: 3%;
+    border: 1px solid white;
+    color: white;
+}
+.box .blockTitle{
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 3%;
+}
+.blockData{
+    text-align: center;
+}
+.box1 .blockTitle{
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 6%;
+}
+.main .bottom{
+    width: 100%;
+    height:30% ;
+    background-color: rgba(112,103,94,0.5);
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-size: 13px;
+}
+.bottom .qiXiang{
+    width: 30%;
+    height: 100%;
+    background-color:rgba(95,93,94,0.6) ;
+    display: flex;
+    flex-direction: row;
+    margin-top: 0.8%;
+    margin-left: 0.5%;
+    border-radius: 7px;
+}
+.qiXiang .col{
+    margin-top: 5%;
+    margin-right: 15%;
+}
+
+.qiXiang .col1{
+    margin-left: 8%;
+}
+.colOne{
+    margin-bottom: 38%;
+}
+.bottom .sum{
+    width: 10%;
+    height: 100%;
+}
+.sumData{
+    width: 70%;
+    margin-left: 25%;
+    margin-top: 30%;
+}
+.sumData div{
+    margin-bottom: 2%;
+}
+.bottom .charts{
+    width: 55%;
+    height: 100%;
+    background-color:rgba(95,93,94,0.6) ;
+    margin-top: 0.8%;
+    margin-left: 0.5%;
+    border-radius: 7px;
+}
+.charts .bar{
+    width: 110%;
+    height: 120%;
+    margin-top: -5%;
+    margin-left: -5%;
+    padding-bottom: 1%;
+}
+.amap-logo {
+    right: -1000px !important;
+    left: auto !important;
+    display: none;
+}
+
+.amap-copyright {
+    right: -1000px !important;
+    left: auto !important;
+}

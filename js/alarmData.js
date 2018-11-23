@@ -1,0 +1,41 @@
+data = {
+    "data":[
+        {
+            "con":[
+                {"powerName":"襄阳站","alarmInfo":"123","alarmData":"2018-4-17"},
+                {"powerName":"襄阳站","alarmInfo":"123","alarmData":"2018-4-17"},
+                {"powerName":"襄阳站","alarmInfo":"123","alarmData":"2018-4-17"},
+            ]
+        },
+        {
+            "con":[
+                {"powerName":"襄阳站2","alarmInfo":"123","alarmData":"2018-4-17"},
+                {"powerName":"襄阳站","alarmInfo":"123","alarmData":"2018-4-17"},
+                {"powerName":"襄阳站","alarmInfo":"123","alarmData":"2018-4-17"},
+            ]
+        },
+        {
+            "con":[
+                {"powerName":"襄阳站3","alarmInfo":"123","alarmData":"2018-4-17"},
+                {"powerName":"襄阳站","alarmInfo":"123","alarmData":"2018-4-17"},
+                {"powerName":"襄阳站","alarmInfo":"123","alarmData":"2018-4-17"},
+            ]
+        },
+        {
+            "con":[
+                {"powerName":"襄阳站4","alarmInfo":"123","alarmData":"2018-4-17"},
+                {"powerName":"襄阳站","alarmInfo":"123","alarmData":"2018-4-17"},
+                {"powerName":"襄阳站","alarmInfo":"123","alarmData":"2018-4-17"},
+            ]
+        },
+        {
+            "con":[
+                {"powerName":"襄阳站5","alarmInfo":"123","alarmData":"2018-4-17"},
+                {"powerName":"襄阳站","alarmInfo":"123","alarmData":"2018-4-17"},
+                {"powerName":"襄阳站","alarmInfo":"123","alarmData":"2018-4-17"},
+            ]
+        }
+    ]
+}
+
+

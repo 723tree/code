@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>发电量统计表</title>
+    <meta name="renderer" content="webkit" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="../css/font-awesome.css" rel="stylesheet" />
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../css/style.css" rel="stylesheet" />
+    <link href="../css/page.css" rel="stylesheet" />
+    <link href="../css/stationRunTable.css" rel="stylesheet" />
+    <link href="../laydate/theme/default/laydate.css" rel="stylesheet" />
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/tablleColor.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../laydate/laydate.js"></script>
+    <script src="../js/electricityTableAjax.js"></script>
+    <script src="../js/electricityTableData.js"></script>
+    <script src="../js/stationRunTablePage.js"></script>
+</head>
+<body>
+<div class="top">
+    <div class="top-left">
+        <div class="kong"></div>
+        <div class="logo">
+            <img src="../imgs/logo3.png">
+        </div>
+    </div>
+    <div class="top-right">
+        <ul class="list">
+            <li><a href="informationCenter.html">电站中心</a></li>
+            <li><a href="checkCenter.html">运维中心</a></li>
+            <li><a href="reportCenter.html">报表中心</a></li>
+            <li><a href="centralizedControl.html">展示中心</a></li>
+            <li><a href="associate.html">账号管理</a></li>
+            <li><a href="login.html" ><span class="fa fa-user"></span></a></li>
+        </ul>
+    </div>
+</div>
+<div class="main">
+    <div class="left">
+        <div class="side" id="side">
+            <form id="myForm">
+                <div class="box">
+                    <input type="text" placeholder="选择具体日期" id="test1" value="" class="text-center" name="date1">
+                </div>
+                <div class="box">
+                    <!--<button id="test1">选择时间段</button>-->
+                    <input type="text" placeholder="选择时间段" id="test2" value="" class="text-center" name="date2">
+                </div>
+                <div class="box">
+                    <select name="idTest">
+                        <option value="">襄阳站</option>
+                        <option value="">北京站</option>
+                        <option value="">江苏站</option>
+                    </select>
+                </div>
+                <div class="box">
+                    <button>导出表格</button>
+                </div>
+                <div class="box">
+                    <input type="button" value="搜 索" class="text-center" onclick="beforeSubmit()" >
+                </div>
+                <div class="box kong2">
+
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="center">
+        <table class="table table-bordered table-striped" id="dataTable" >
+
+        </table>
+        <div id="ui-page" class="ui-page">
+
+        </div>
+    </div>
+</div>
+<script>
+    var myDate = new Date();//获取系统当前时间
+    var today=myDate.toLocaleDateString()//获取当前日期
+    //执行一个laydate实例
+    laydate.render({
+        elem: '#test1', //指定元素
+        max:today
+    });
+    laydate.render({
+        elem: '#test2', //指定元素
+        range: true,
+        max:today
+
+    });
+    initTotalPageNum=2;
+    pageSize=1;
+    if(initTotalPageNum!=0){
+        $("#ui-page").paging({pageSize:pageSize,totalPage:initTotalPageNum});
+        document.getElementsByClassName('page')[0].click();
+    }
+    if(pageSize==1){
+        $("#ui-page").paging({pageSize:pageSize,totalPage:initTotalPageNum});
+        document.getElementsByClassName('page')[0].click();
+        document.getElementById('next').style.display='none';
+        document.getElementById('end').style.display='none';
+    }
+</script>
+<script src="../js/TablePage.js"></script>
+</body>
+</html>

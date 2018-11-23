@@ -1,0 +1,853 @@
+body{
+    -webkit-font-smoothing: antialiased;
+}
+.top{
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    z-index: 1002;
+}
+.top-left{
+    width:40%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+}
+.top-left .kong{
+    width: 37%;
+}
+.logo{
+    width: 30%;
+    height: 60px;
+    line-height: 60px;
+}
+.logo img{
+    width: 170px;
+}
+.top-right{
+    width: 60%;
+    height: 70px;
+}
+.list{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    padding: 0 !important;
+}
+.list li {
+    width: 14.3%;
+}
+li a{
+    color: black;
+    display: inline-block;
+    height: 70px;
+    line-height: 70px;
+}
+
+ .main{
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+ }
+.show{
+    width: 88%;
+    height: 430px;
+    margin-left: 6%;
+    background:url("../imgs/home.png");
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+}
+.show .block{
+    width: 17%;
+    height:430px;
+    margin-left: 15%;
+}
+.show .block .box{
+    width: 100%;
+    height: 230px;
+    margin-top: 130px;
+}
+.show .block .box .box1{
+    width: 40%;
+    height: 100px;
+    border-top: 2px solid white;
+    font-size: 21px;
+    font-weight: bold;
+    color: white;
+}
+.show .block .box .box1 div{
+    margin-top: 12px;
+}
+.show .block .box .box2{
+    width: 100%;
+    height: 60px;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+}
+.show .block .box .box2 div{
+    margin-top: 10px;
+}
+.show .block .box .box3{
+    width: 55%;
+    height: 50px;
+    margin-top: 20px;
+}
+.show .block .box .box3 a{
+    display: block;
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    color: #222222;
+    text-align: center;
+}
+.show .block .box .box3 a:hover{
+    text-decoration: none;
+}
+.show .block .box .box3 a span{
+    display: inline-block;
+    line-height: 40px;
+    height: 40px;
+}
+.show .block .box .box3 a .more{
+    margin-right: 30px;
+    font-size: 12px;
+    font-weight: bold;
+}
+.fa-angle-right{
+    font-size: 17px;
+    font-weight: bolder;
+}
+
+.block1{
+    width: 60%;
+    height: 360px;
+    margin-left: 20%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+.block1 .left{
+    width: 50%;
+    height: 360px;
+}
+.block1 .left .title{
+    width: 100%;
+    height: 40%;
+}
+.block1 .left .title1{
+    width: 100%;
+    height: 50%;
+    color: #DBB364;
+    font-size: 22px;
+    font-weight: bold;
+}
+.block1 .left .title1 span{
+    display: inline-block;
+    margin-top: 8%;
+}
+.block1 .left .title2{
+    width: 100%;
+    height: 50%;
+    color: black;
+    text-align: center;
+}
+.block1 .left .title2  .weight{
+    display: inline-block;
+    font-size: 21px;
+    font-weight: bold;
+    /*margin-left: 5%;*/
+    margin-top: 3.5%;
+}
+.block1 .left .title2  .enter{
+    display: inline-block;
+    margin-left: 55%;
+}
+.block1 .left .title2  .enter a{
+    color: black;
+}
+
+.block1 .left .content{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+}
+.block1 .left .tree{
+    width: 17%;
+    height: 100%;
+}
+.block1 .left .tree img{
+    margin-left: 30%;
+}
+.block1 .left .leave{
+    width: 27%;
+    height: 90%;
+    margin-top: 3%;
+    margin-left: 1%;
+}
+.block1 .left .leave .lea{
+    width: 100%;
+    height: 33%;
+}
+.block1 .left .leave .lea .lea1 span{
+    font-size: 15px;
+    font-weight: bold;
+}
+.block1 .left .leave .lea .lea2 span{
+    font-size: 11px;
+    display: inline-block;
+    margin-top: 2%;
+}
+
+.block1 .right{
+    width: 50%;
+    height: 360px;
+}
+.block1 .right .rTitle{
+    width: 100%;
+    height: 30%;
+    background-color:  #DBB364;
+    color: white;
+}
+.block1 .right .rTitle .title1{
+    width: 100%;
+    height: 50%;
+    font-size: 17px;
+    font-weight: bold;
+}
+.block1 .right .rTitle .title1 span{
+    display: inline-block;
+    margin-top: 3%;
+    margin-left: 7%;
+}
+.block1 .right .rTitle .title2 span{
+    display: inline-block;
+    margin-top: 1%;
+    margin-left: 6.5%;
+    font-size: 11px;
+}
+.block1 .right .rContent{
+    width: 100%;
+    height: 70%;
+    border: 1px solid #E8E8E8;
+}
+.block1 .right .rContent .img{
+    width: 96%;
+    height: 86%;
+    margin-top: 2%;
+    margin-left:2% ;
+}
+.block1 .right .rContent .img img{
+    width: 100%;
+    height: 100%;
+}
+.block1 .right .rContent .imgText{
+    width: 100%;
+    height: 10%;
+}
+.block1 .right .rContent .imgText span{
+    display: inline-block;
+    margin-left: 5%;
+    margin-top: 0.5%;
+}
+.block1 .right:hover{
+    transform: translate3d(0px,-10px,0px);
+    box-shadow:0px 15px 30px rgba(0,0,0,.5) ;
+}
+
+.block2{
+    width: 60%;
+    height: 260px;
+    margin-left: 20%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 60px;
+}
+.block2 .left{
+    width: 57%;
+    height: 100%;
+    border: 1px solid #E8E8E8;
+}
+.block2 .left .img{
+    width: 98%;
+    height: 98%;
+    margin-left: 1%;
+    margin-top: 1%;
+}
+.block2 .left .img img{
+    width: 100%;
+    height: 100%;
+}
+.block2 .right{
+    width: 43%;
+    height: 100%;
+}
+.block2 .right .content{
+    width: 80%;
+    height: 100%;
+    margin-left: 10%;
+}
+.block2 .right .title{
+    width: 100%;
+    height: 40%;
+}
+.block2 .right  .title1{
+    width: 100%;
+    height: 50%;
+    color: #DBB364;
+    font-size: 22px;
+    font-weight: bold;
+}
+.block2 .right  .title1 span{
+    display: inline-block;
+    margin-top: 3%;
+}
+.block2 .right .title2{
+    width: 100%;
+    height: 50%;
+    color: black;
+    text-align: center;
+}
+.block2 .right  .title2  .weight{
+    display: inline-block;
+    font-size: 21px;
+    font-weight: bold;
+    margin-top: 1%;
+}
+.block2 .right .title2  .enter{
+    display: inline-block;
+    margin-left: 40%;
+}
+.block2 .right .title2  .enter a{
+    color: black;
+}
+
+.block2 .right .content .box{
+    width: 100%;
+    height: 60%;
+}
+.block2 .right .tree{
+    width: 100%;
+    height: 100%;
+}
+.block2 .right .tree .img{
+    width: 100%;
+    height: 60%;
+}
+.block2 .right .tree img{
+    margin-top: -10%;
+    margin-left: 40%;
+    transform:rotate(90deg);
+}
+.block2 .right .leave{
+    width: 65%;
+    height: 40%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 2%;
+    margin-left: 22%;
+}
+.block2 .right .leave .lea{
+    width: 33%;
+    height: 100%;
+}
+.block2 .right .leave .lea .lea1 span{
+    font-size: 15px;
+    font-weight: bold;
+}
+.block2 .right .leave .lea .lea2 span{
+    font-size: 11px;
+    display: inline-block;
+    margin-top: 2%;
+}
+
+
+.block3{
+    width: 100%;
+    height: 300px;
+    background-color: #E4E4E4;
+    margin-top: 60px;
+}
+.block3  .content{
+    width: 60%;
+    height:90%;
+    margin-left: 20%;
+}
+.block3  .title{
+    width: 100%;
+    height: 40%;
+}
+.block3   .title1{
+    width: 100%;
+    height: 50%;
+    color: #DBB364;
+    font-size: 22px;
+    font-weight: bold;
+}
+.block3  .title1 span{
+    display: inline-block;
+    margin-top: 1%;
+    margin-left: 2%;
+}
+.block3  .title2{
+    width: 100%;
+    height: 50%;
+    color: black;
+    text-align: center;
+}
+.block3  .title2  .weight{
+    display: inline-block;
+    font-size: 21px;
+    font-weight: bold;
+    margin-top: 1%;
+}
+.block3  .title2  .enter{
+    display: inline-block;
+    margin-left: 75%;
+}
+.block3 .title2  .enter a{
+    color: black;
+}
+
+.block3  .content .box{
+    width: 100%;
+    height: 60%;
+}
+.block3  .tree{
+    width: 87%;
+    height: 100%;
+    margin-left: 6.5%;
+}
+.block3  .tree .img{
+    width: 100%;
+    height: 30%;
+}
+.block3  .leave{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+}
+.block3 .leave .leav{
+    /*width: 9%;*/
+    height: 100%;
+    /*margin-left: 1%;*/
+    display: flex;
+    flex-direction: row;
+    background-color: #E0D0B0;
+}
+
+@media screen and (max-width:2000px){
+    .block3 .leave .leav1{
+        width: 100px;
+        height: 100%;
+        /*margin-left: 1%;*/
+        display: flex;
+        flex-direction: row;
+        background-color: #E0D0B0;
+    }
+    .block3 .leave .leav2{
+        width: 100px;
+        margin-left: 50px;
+        position: relative;
+        height: 100%;
+        left: 5px;
+        display: flex;
+        flex-direction: row;
+        background-color: #E0D0B0;
+    }
+    .block3 .leave .leav3{
+        width: 100px;
+        margin-left: 50px;
+        position: relative;
+        height: 100%;
+        left: 5px;
+        /*margin-left: 10%;*/
+        display: flex;
+        flex-direction: row;
+        background-color: #E0D0B0;
+    }
+    .block3 .leave .leav4{
+        width: 100px;
+        margin-left: 50px;
+        position: relative;
+        height: 100%;
+        left: 15px;
+        /*margin-left: 10%;*/
+        display: flex;
+        flex-direction: row;
+        background-color: #E0D0B0;
+    }
+    .block3 .leave .leav5{
+        width: 100px;
+        margin-left: 50px;
+        position: relative;
+        height: 100%;
+        left: 18px;
+        /*margin-left: 10%;*/
+        display: flex;
+        flex-direction: row;
+        background-color: #E0D0B0;
+    }
+    .block3 .leave .leav6{
+        width: 100px;
+        margin-left: 50px;
+        position: relative;
+        left: 30px;
+        height: 100%;
+        /*margin-left: 10%;*/
+        display: flex;
+        flex-direction: row;
+        background-color: #E0D0B0;
+    }
+}
+@media screen and (max-width:1800px){
+    .block3 .leave .leav1{
+        width: 150px;
+        height: 100%;
+        /*margin-left: 1%;*/
+        display: flex;
+        flex-direction: row;
+        background-color: #E0D0B0;
+    }
+    .block3 .leave .leav2{
+        width: 150px;
+        margin-left: 50px;
+        position: relative;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        background-color: #E0D0B0;
+    }
+    .block3 .leave .leav3{
+        width: 150px;
+        margin-left: 50px;
+        position: relative;
+        height: 100%;
+        /*margin-left: 10%;*/
+        display: flex;
+        flex-direction: row;
+        background-color: #E0D0B0;
+    }
+    .block3 .leave .leav4{
+        width: 150px;
+        margin-left: 50px;
+        position: relative;
+        height: 100%;
+        /*margin-left: 10%;*/
+        display: flex;
+        flex-direction: row;
+        background-color: #E0D0B0;
+    }
+    .block3 .leave .leav5{
+        width: 150px;
+        margin-left: 50px;
+        position: relative;
+        height: 100%;
+        left: 5px;
+        /*margin-left: 10%;*/
+        display: flex;
+        flex-direction: row;
+        background-color: #E0D0B0;
+    }
+    .block3 .leave .leav6{
+        width: 150px;
+        margin-left: 50px;
+        position: relative;
+        left: 10px;
+        height: 100%;
+        /*margin-left: 10%;*/
+        display: flex;
+        flex-direction: row;
+        background-color: #E0D0B0;
+    }
+}
+@media screen and (max-width:1600px){
+    .block3 .leave .leav1{
+        width: 150px;
+        height: 100%;
+        /*margin-left: 1%;*/
+        display: flex;
+        flex-direction: row;
+        background-color: #E0D0B0;
+    }
+    .block3 .leave .leav2{
+        width: 150px;
+        margin-left: 50px;
+        position: relative;
+        height: 100%;
+        left: 25px ;
+        display: flex;
+        flex-direction: row;
+        background-color: #E0D0B0;
+    }
+    .block3 .leave .leav3{
+        width: 150px;
+        margin-left: 50px;
+        position: relative;
+        left: 40px;
+        height: 100%;
+        /*margin-left: 10%;*/
+        display: flex;
+        flex-direction: row;
+        background-color: #E0D0B0;
+    }
+    .block3 .leave .leav4{
+        width: 150px;
+        margin-left: 50px;
+        position: relative;
+        left: 60px;
+        height: 100%;
+        /*margin-left: 10%;*/
+        display: flex;
+        flex-direction: row;
+        background-color: #E0D0B0;
+    }
+    .block3 .leave .leav5{
+        width: 150px;
+        margin-left: 50px;
+        position: relative;
+        left: 75px;
+        height: 100%;
+        /*margin-left: 10%;*/
+        display: flex;
+        flex-direction: row;
+        background-color: #E0D0B0;
+    }
+    .block3 .leave .leav6{
+        width: 150px;
+        margin-left: 50px;
+        position: relative;
+        left: 100px;
+        height: 100%;
+        /*margin-left: 10%;*/
+        display: flex;
+        flex-direction: row;
+        background-color: #E0D0B0;
+    }
+}
+@media screen and (max-width:1366px){
+    .block3 .leave .leav1{
+        width: 150px;
+        height: 100%;
+        /*margin-left: 1%;*/
+        display: flex;
+        flex-direction: row;
+        background-color: #E0D0B0;
+    }
+    .block3 .leave .leav2{
+        width: 150px;
+        margin-left: 50px;
+        position: relative;
+        height: 100%;
+        left: 40px ;
+        display: flex;
+        flex-direction: row;
+        background-color: #E0D0B0;
+    }
+    .block3 .leave .leav3{
+        width: 150px;
+        margin-left: 50px;
+        position: relative;
+        left: 70px;
+        height: 100%;
+        /*margin-left: 10%;*/
+        display: flex;
+        flex-direction: row;
+        background-color: #E0D0B0;
+    }
+    .block3 .leave .leav4{
+        width: 150px;
+        margin-left: 50px;
+        position: relative;
+        left: 100px;
+        height: 100%;
+        /*margin-left: 10%;*/
+        display: flex;
+        flex-direction: row;
+        background-color: #E0D0B0;
+    }
+    .block3 .leave .leav5{
+        width: 150px;
+        margin-left: 50px;
+        position: relative;
+        left: 130px;
+        height: 100%;
+        /*margin-left: 10%;*/
+        display: flex;
+        flex-direction: row;
+        background-color: #E0D0B0;
+    }
+    .block3 .leave .leav6{
+        width: 150px;
+        margin-left: 50px;
+        position: relative;
+        left: 170px;
+        height: 100%;
+        /*margin-left: 10%;*/
+        display: flex;
+        flex-direction: row;
+        background-color: #E0D0B0;
+    }
+}
+
+
+.block3  .leave .lea1 span{
+    display: block;
+    font-size: 15px;
+    font-weight: bold;
+    width: 40%;
+    margin: 0 auto;
+    line-height: 24px;
+    margin-top: 5%;
+}
+.block3  .leave .lea2 span{
+    font-size: 11px;
+    display:block;
+    width: 60%;
+    margin: 0 auto;
+    line-height: 24px;
+    margin-top: 60%;
+
+}
+.block4{
+    width: 60%;
+    height: 360px;
+    margin-top: 60px;
+    margin-left: 20%;
+}
+.block4  .title{
+    width: 100%;
+    height: 40%;
+}
+.block4   .title1{
+    width: 100%;
+    height: 50%;
+    color: #DBB364;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+.block4  .title1 span{
+    display: inline-block;
+    margin-top: 2.5%;
+}
+.block4  .title2{
+    width: 100%;
+    height: 50%;
+    color: black;
+    margin-left: 46%;
+}
+.block4  .title2  .weight{
+    display: inline-block;
+    font-size: 21px;
+    font-weight: bold;
+}
+.block4  .title2  .enter{
+    display: inline-block;
+    margin-left: 34%;
+}
+.block4 .title2  .enter a{
+    color: black;
+}
+.block4  .boxes{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+}
+.block4  .boxes .box{
+    width: 46%;
+    margin-left: 2%;
+    margin-right: 2%;
+    height: 100%;
+    border: 1px solid #E8E8E8;
+}
+.block4  .boxes .box .img{
+    width: 98%;
+    height: 96%;
+    margin-top: 1%;
+    margin-left: 1%;
+    background-color: #808080;
+}
+
+
+.block5{
+    width: 100%;
+    height: 260px;
+    background-color: #E4E4E4;
+    margin-top: 60px;
+}
+.block5  .title{
+    width: 100%;
+    height: 40%;
+}
+.block5   .title1{
+    width: 100%;
+    height: 50%;
+    color: #DBB364;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+.block5  .title1 span{
+    display: inline-block;
+    margin-top: 1%;
+}
+.block5  .title2{
+    width: 100%;
+    height: 50%;
+    color: black;
+    text-align: center;
+    font-size: 21px;
+    font-weight: bold;
+    margin-top: 0.5%;
+}
+.block5 .content{
+    width: 100%;
+    height: 60%;
+}
+.block5  .content .box1{
+    width: 100%;
+    height: 25%;
+    color: black;
+    text-align: center;
+    font-size: 15px;
+}
+.block5  .box1 span{
+    display: inline-block;
+    border: 2px solid  #DBB364;
+    padding: 5px 40px;
+    color:#DBB364 ;
+}
+.block5  .content .box2{
+    width: 100%;
+    height: 25%;
+    color: black;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 2%;
+    font-weight: bold;
+}
+.block5  .content .box2 span{
+    display: inline-block;
+    margin-top: 0.5%;
+}
+.block5  .content .box3{
+    width: 100%;
+    height: 25%;
+    color: black;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+

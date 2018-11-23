@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>历史数据表</title>
+    <meta name="renderer" content="webkit" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="../css/font-awesome.css" rel="stylesheet" />
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../css/style.css" rel="stylesheet" />
+    <link href="../css/history.css" rel="stylesheet" />
+    <link href="../css/page.css" rel="stylesheet" />
+    <link href="../laydate/theme/default/laydate.css" rel="stylesheet" />
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/tablleColor.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../laydate/laydate.js"></script>
+    <script src="../js/historyTableAjax.js"></script>
+    <script src="../js/historyTableAjax2.js"></script>
+    <script src="../js/historyTablePage1.js"></script>
+    <script src="../js/historyTablePage2.js"></script>
+    <script src="../js/historyTablePage3.js"></script>
+    <script src="../js/historyTablePage4.js"></script>
+    <script src="../js/historyTableData.js"></script>
+</head>
+<body>
+<div class="top">
+    <div class="top-left">
+        <div class="kong"></div>
+        <div class="logo">
+            <img src="../imgs/logo3.png">
+        </div>
+    </div>
+    <div class="top-right">
+        <ul class="list">
+            <li><a href="informationCenter.html">电站中心</a></li>
+            <li><a href="checkCenter.html">运维中心</a></li>
+            <li><a href="reportCenter.html">报表中心</a></li>
+            <li><a href="centralizedControl.html">展示中心</a></li>
+            <li><a href="associate.html">账号管理</a></li>
+            <li><a href="login.html" ><span class="fa fa-user"></span></a></li>
+        </ul>
+    </div>
+</div>
+<div class="main">
+    <div class="left">
+        <div id="side" class="side">
+            <form id="myForm" action="">
+                <div class="box">
+                    <input type="text" placeholder="选择具体日期" id="test1" class="text-center">
+                </div>
+                <div class="box">
+                    <input type="text" placeholder="选择时间段" id="test2" class="text-center">
+                </div>
+                <div class="box">
+                    <select>
+                        <option value="">襄阳站</option>
+                        <option value="">北京站</option>
+                        <option value="">江苏站</option>
+                    </select>
+                </div>
+                <div class="box">
+                    <div class="dropdown">
+                        <button  class="btn btn-default" data-toggle="dropdown">
+                            <span id="select">选择设备</span>
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-left" id="tab" style="background: white!important;">
+                            <li><a href="#" onclick="caiji()">采集器</a></li>
+                            <li><a href="#" onclick="libian()">逆变器</a></li>
+                            <li><a href="#" onclick="dianbiao()">电表</a></li>
+                            <li><a href="#" onclick="qixiang()">气象站</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box">
+                    <input type="button" value="导出表格" onclick="daochu()">
+                </div>
+                <div class="box">
+                    <input type="button" value="搜 索" class="text-center" onclick="beforeSubmit()" >
+                </div>
+                <div class="box kong2">
+
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="center">
+        <div class="block" >
+            <div class="con">
+                <table class="table table-bordered table-striped one" id="dataTable1">
+                </table>
+                <div id="ui-page1" class="ui-page">
+
+                </div>
+            </div>
+            <div class="con" style="display: none">
+                <table class="table table-bordered table-striped two" id="dataTable2" >
+
+                </table>
+                <div id="ui-page2" class="ui-page2">
+
+                </div>
+            </div>
+            <div class="con" style="display: none">
+                <table class="table table-striped table-bordered three" id="dataTable3" >
+
+                </table>
+                <div id="ui-page3" class="ui-page3">
+
+                </div>
+            </div>
+            <div class="con" style="display: none">
+                <table class="table table-striped table-bordered four" id="dataTable4">
+
+                </table>
+                <div id="ui-page4" class="ui-page4">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../js/historyTable.js"></script>
+<script src="../js/TablePage.js"></script>
+</body>
+</html>
